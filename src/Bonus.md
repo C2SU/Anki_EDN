@@ -88,15 +88,34 @@ Cet add‑on permet de ne pas "zone out" sur une carte.
     </figure>
 
 
-
+### WorkFlow
+#### Nos techniques pour gagner du temps sur le deck
+- Optimiser réguilièrement le FSRS
+- Enfouir les cartes plutôt que de les réaprendre entièrement (on les verra le lendemain)
+  - Quand on se spoil 
+  - Quand on les confonds
+  - Quand on oublie un détail pas vraiment important
+- Réviser avec une manette connectée à son ordinateur
+  - N'importe quelle manette de console fonctionnera. Le modèle micro de 8BitDo est compact et sans fil.
+  - [Addon pour configurer la manette](https://ankiweb.net/shared/info/1898790263) <span class="copy-block" onclick="copyText(this)">    <code>1898790263</code>    <span class="copy-feedback">Copié ✅</span></span>
+  - [Joytokey](https://joytokey.net/fr/) pour encore plus de personnalisation sur windows
 ### IA basées sur les référentiels
 - [EDN GTP](https://chatgpt.com/g/g-nw9p7oAPP-edn-gpt)
 - [EDN AI](https://chatgpt.com/g/g-XMpoZ4ivr-edn-ai)
 - [DP EDN](https://chatgpt.com/g/g-sxGvTtmZ0-dossiers-progressifs-pour-l-edn)
 
- L'offre 1 an de Gemini pour les étudiants + [NotebookLM](https://notebooklm.google.com/) est très pratique aussi
+### Outils numériques gratuits pour les étudiants (et très pratiques!)
+- Gemini et donc [NotebookLM](https://notebooklm.google.com/) gratuit pour 1 an 
+- [Notion](https://www.notion.com/fr/product/notion-for-education) 
 
 ### Ressources partagées par des externes 
+
+- Organisation des révisions
+  - [Liste de Mnémotechnique participative](https://www.notion.so/2ced9253bfce80beb653ee24c4a20cbe?v=2ced9253bfce80c19fe2000c4a58e341&source=copy_link)
+  - [Template Notion — Organisation EDN](https://organisationedn.notion.site/Organisation-EDN-290ec909b05380e4bbf0c31b5670a71d) <small>([source](https://www.facebook.com/groups/entraideiecn/permalink/3239762099523924/))</small>
+    - Tableur classifiant les items (collège, relecture, tombabilité aux annales…).
+    - Calendrier de révision avec méthode des J.
+    - Graphique de progression.
 
 - Collèges et fiches officielles
   - [Guide EFR / gaz du sang](https://www.google.com/search?q=Coll%C3%A8ge+des+enseignants+de+pneumologie+EFR+gaz+du+sang)
@@ -130,4 +149,19 @@ Cet add‑on permet de ne pas "zone out" sur une carte.
 
 - Podcasts 
   - Nephrodio 
+
+### Réviser avec une manette
+
+- J'utilise [ça](https://www.8bitdo.com/micro/), mais tout ferra l'affaire (compact, c'est cool).
+
+Pour mapper les touches de la manette aux actions Anki :
+- **Sur Windows** : utilisez [JoyToKey](https://joytokey.net/en/download)
+- **Sur Mac** : utilisez [Enjoy2](https://github.com/fyhuang/enjoy2/blob/master/README.md)
+- **Alternative multi-plateforme** : l'add-on Anki [Gamepad](https://ankiweb.net/shared/info/1898790263)
+*
+### Masquer les informations de progression pour mieux se concentrer
+
+Dans `Préférences > Révision` (<kbd>Ctrl</kbd>+<kbd>P</kbd> / <kbd>Cmd</kbd>+<kbd>,</kbd>), vous pouvez décocher :
+- **« Afficher le nombre de cartes restantes »** — pour ne plus voir le compteur de cartes pendant les révisions
+- **« Afficher la date de la prochaine révision au dessus des boutons »** — pour ne pas être distrait par les intervalles futurs
 

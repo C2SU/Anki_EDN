@@ -5,8 +5,7 @@ Ce paquet est collaboratif et nous avons besoin de vous pour l'actualiser.
 
 - Des sauvegardes automatiques sont réalisées nativement par Anki [ici](https://docs.ankiweb.net/files.html#file-locations).
 - Si vous voulez protéger des cartes des futures mises à jour qu'elles pourraient subir :
-    - Utilisez (pour chaque carte concernée) le tag `Ankicollab_protect::all`.
-    - Si vous souhaitez protéger un seul champ, utilisez par exemple `Ankicollab_protect::verso`.
+    - Sélectionnez vos cartes à protéger dans l'explorateur, clic droit > `AnkiCollab: Protect fields of note(s)`.
 
 ## Notifications
 
@@ -60,33 +59,40 @@ Vous pouvez soumettre des modifications pour de multiples raisons, même pour de
     - Il suffit maintenant d'écrire les commandes directement dans le corps de votre texte pour qu'elles s'insèrent.
     - Les commandes sont visualisables sur [ce tableau](./symboles.md).
 
-<ul style="list-style-type: disc "><li><ul style="list-style-type: circle;"><li><ul style="list-style-type: square;"> <li> </li></li></ul></li></ul></ul>
+<ul style="list-style-type: disc "><li><ul style="list-style-type: circle;"><li><ul style="list-style-type: square;"><li></li></ul></li></ul></li></ul>
 
 - Pour écrire les puces ci‑dessus, utilisez <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>.</kbd> | <kbd>Cmd</kbd>+<kbd>Maj</kbd>+<kbd>.</kbd>
 
 ### Pour mettre à jour efficacement un item à l'aide de l'IA
 - Nous vous conseillons d'utiliser [Claude](https://claude.ai).
 - Allez dans <span class="tab-button active">Parcourir</span> (<kbd class="kbd-keyboard">B</kbd>), cherchez les cartes d'intérêt avec <code>tag:</code>, sélectionnez-les avec <kbd>Ctrl</kbd>+<kbd>A</kbd> | <kbd>Cmd</kbd>+<kbd>A</kbd> et exportez-les avec <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>E</kbd> | <kbd>Cmd</kbd>+<kbd>Maj</kbd>+<kbd>E</kbd> ou via le menu `Exporter les notes...`.
+- De la même manière, vous pouvez exporter les cartes des items en rapport avec l'item d'intérêt.
     - Exportez selon ces réglages.
     <figure style="width: 350px;">
     <img src="./images/illu_export_notes.png" alt="Média en cours de création..."/>
     </figure>
-- Isolez dans un PDF l'item d'intérêt (des collègues sont disponibles sur le Discord).
-- Avec ces deux pièces jointes, envoyez ce prompt à l'IA :
+- Isolez dans un PDF l'item d'intérêt (des collèges sont disponibles sur le Discord).
+- <a href="./assets/Liste_de_Tags_Anki_EDN.txt" download>Ajoutez ce fichier</a>
+- Avec ces trois ou quatres pièces jointes, envoyez ce prompt à l'IA :
 
 <span class="copy-block collapse-copy" onclick="copyText(this)">
-  <code>Voici mes fiches Anki et le référentiel officiel pour un item.
-Tu utiliseras uniquement le contenu du PDF comme source.
+  <code>Voici mes fiches Anki, le référentiel officiel pour l'item à travailler et une liste des tags et d'abréviations utilisé dans le deck.
+Si c'est un item transversal, j'ai ajouté les cartes en rapport avec celui-ci dans le cas où elles n'aurait pas été biens taggés.
+Si je t'ai donnés plusieurs pdf référentiel, c'est la dernière édition qui prime (je peux te l'indiquer).
+Tu utiliseras comme source uniquement le(s) PDF. S'ils t'apparaissent vide, passe-les par OCR.
 Objectif :
 Vérifie chaque carte Anki et indique si elle est exacte, à modifier, non sourcée, redondante ou à supprimer.
-Prends garde aux tags et aux rangs des informations.
+La forme des cartes est aussi un point d'attention.
+Prend garde aux tags et aux rangs des informations. Les rangs C rédigés en couleur verte sur les référentiels sont à ignorer. 
+Fait des liens entre les cartes quand nécessaires à l'aide des nID.
 Si des notions du référentiel ne sont pas fichées, crée de nouvelles cartes dans mon style habituel.
-Classe le travail par sections du référentiel (tableau synthèse + analyse détaillée). N’analyse en détail que les cartes modifiées, supprimées ou ajoutées. Utilise le format HTML de mes cartes, la concision et la densité EDN.
+Analyse en détail les cartes modifiées, supprimées ou ajoutées.	
+Utilise le format HTML de mes cartes, la concision et la densité EDN.
 Format attendu :
-1. Tableau synthèse section par section
-2. Analyse détaillée des cartes modifiées/ajoutées
-3. Proposition de nouvelles cartes au format Anki (HTML lisible, pas d’export brut) avec leurs tags appropriés
-4. Signalement des cartes redondantes, sans correspondance ou hors référentiel</code>
+1 Tableau de synthèse
+2 Analyse détaillée des cartes modifiées
+3 Proposition des nouvelles cartes au format Anki (HTML lisible) avec leurs tags appropriés
+4 Signalement des cartes redondantes, sans correspondance ou hors référentiel</code>
   <span class="copy-feedback">Copié ✅</span>
 </span>
 
@@ -94,6 +100,8 @@ Format attendu :
 <figure style="width: 350px;">
     <img src="./images/illu_htlm_modifier.png" alt="Média en cours de création..."/>
 </figure>
+
+- Toutes les cartes validés doivent actualiser le tag source (par exemple : `source::2024::ORL`).
 
 ### Pour créer des liens entre les cartes <span class="gif-wrapper" data-video="images/clickable-note-links-demo.webm" data-video-fallback="images/clickable-note-links-demo.mp4"  data-caption="Vidéo de Léo Picat"></span>
 - Récupérez le NID de la note à lier.

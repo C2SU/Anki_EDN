@@ -14,7 +14,7 @@ Ces trois étapes sont nécessaires au fonctionnement du paquet.
 - Une fois sur l'application, appuyez sur <span class="tab-button active">synchronisation</span> ou sur la touche <kbd>Y</kbd> puis connectez‑vous à votre compte AnkiWeb ;
 - Allez dans `Outil > Greffons > Acquérir des greffons` ou <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>A</kbd> et collez 
 <span class="copy-block" onclick="copyText(this)">
-  <code>1957538407 501542723 1052724801 1170639320 1906641654 2040501954</code>
+  <code>1957538407 501542723 1052724801 445658251 2135076010 1906641654 2040501954</code>
   <span class="copy-feedback"> Copié ✅</span>
 </span>. On a installé ça[^1].
 
@@ -30,9 +30,18 @@ Ces trois étapes sont nécessaires au fonctionnement du paquet.
 </span>.
 - Toujours dans `AnkiCollab > Edit Subscriptions`, allez dans `🛠️ Global Settings` et activez `Check for Updates on Startup` et `Automatically suspend new Cards` ;
 - Vous avez téléchargé le deck Anki EDN !
+<h2>
+  3. Faire fonctionner Lien entre les cartes (réparation des NID)
+  <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span> 
+</h2> 
+
+1. Dans le menu principal d'Anki, cliquez sur **Anki EDN** ;
+2. Sélectionnez **⚠️ Réparer les NID** ;
+3. Cliquez sur **continuer**
+4. Attendez la fin de l'opération ; Relancez Anki et vos liens sont maintenant réparés !
 
 <h2>
-  3. Les options de révision 
+  4. Les options de révision 
   <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span> 
 </h2>
 
@@ -93,8 +102,8 @@ Sinon, vous serez déroutés par l'ordre aléatoire des cartes.
 [^1]: Les greffons installés : 
     - 1957538407 - [AnkiCollab](https://ankiweb.net/shared/info/1957538407) : Pour que AnkiCollab fonctionne !
     - 501542723 - [Auto Sync](https://ankiweb.net/shared/info/501542723) : Pour ne pas perdre votre progression.
+    - 445658251 - [Lier les Cartes (Anki EDN)](https://ankiweb.net/shared/info/445658251) : Add‑on codé par Léo Picat inhérent au paquet pour naviguer entre les cartes liées (très important).
     - 1052724801 - [BetterSearch](https://ankiweb.net/shared/info/1052724801) : Pour naviguer facilement entre les tags (très important).
-    - 1170639320 - [Clickable note links](https://ankiweb.net/shared/info/1170639320) : Add‑on codé par Léo Picat inhérent au paquet.
     - 1906641654 - [See Previous Card Ratings in Reviewer](https://ankiweb.net/shared/info/1906641654) : Pour connaître la difficulté des cartes.
     - 2040501954 - [Symbols As You Type](https://ankiweb.net/shared/info/2040501954) : Pour éditer facilement les cartes.
 

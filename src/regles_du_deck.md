@@ -8,7 +8,7 @@ Les cartes qui composent le paquet ne sont pas des fiches de cours, mais des fla
 > 1 carte = 1 info
 
 Par exemple :
-Si une prise en charge comprend un traitement pharmacologique, des règleshygiéno-diététiques, et des examens complémentaires de suivi, il y'aura  probablement  4 cartes : une par pan de la prise en charge et une carte "sommaire" qui demandera de réciter ces 3 grands axes. Des liens clicables entre les cartes sont construit, ce qui permet une meilleure mise en contexte. Lisez  [cette doc](https://ankiweb.net/shared/info/1170639320) pour bien l'utiliser.
+Si une prise en charge comprend un traitement pharmacologique, des règles hygiéno-diététiques, et des examens complémentaires de suivi, il y aura probablement 4 cartes : une par pan de la prise en charge et une carte "sommaire" qui demandera de réciter ces 3 grands axes. Des liens cliquables entre les cartes sont construits, ce qui permet une meilleure mise en contexte. Lisez [cette doc](https://ankiweb.net/shared/info/445658251) pour bien l'utiliser.
 
 <figure>
     <img src="./images/paquet-edn-exemple-sommaire.png" alt="Sorry the link is broken..."/>

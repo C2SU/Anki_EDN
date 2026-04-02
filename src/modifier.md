@@ -36,7 +36,7 @@ Vous pouvez soumettre des modifications pour de multiples raisons, même pour de
 
 > Il faut maîtriser la forme rédactionnelle des cartes.
 
-> Il faut maîtriser l'utilisation de [l'add‑on des liens entre les cartes](https://ankiweb.net/shared/info/1170639320) ; vous trouverez un tuto ci‑dessous.
+> Il faut maîtriser l'utilisation de [l'add‑on des liens entre les cartes](https://ankiweb.net/shared/info/445658251) ; vous trouverez un tuto ci‑dessous.
 
 ### Pour rédiger proprement
 - Vérifiez que la carte que vous voulez rajouter n'existe pas déjà sous un autre tag.
@@ -104,14 +104,14 @@ Format attendu :
 - Toutes les cartes validés doivent actualiser le tag source (par exemple : `source::2024::ORL`).
 
 ### Pour créer des liens entre les cartes <span class="gif-wrapper" data-video="images/clickable-note-links-demo.webm" data-video-fallback="images/clickable-note-links-demo.mp4"  data-caption="Vidéo de Léo Picat"></span>
-- Récupérez le NID de la note à lier.
-    - Sélectionnez la note via l'explorateur.
-    - <kbd>Cmd</kbd>+<kbd>Maj</kbd>+<kbd>C</kbd> | <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>C</kbd> ou clic droit > Informations et cherchez l'identifiant de **note** (pas de carte).
-- Modifiez la note dans laquelle vous souhaitez insérer le lien.
-    - Collez le NID à l'endroit souhaité.
-    - Sélectionnez le NID et appuyez sur <kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd> | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd> ou appuyez sur Entrée.
+- Sélectionnez la note à lier dans l'explorateur ;
+- Copiez son identifiant (NID) via `Clic droit > Copy Note ID` ou <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>C</kbd> ;
+- Dans la note de destination, après avoir collé le NID, sélectionnez-le ou cliquez sur le bouton <span class="tab-button active">Lier</span> ou appuyez sur <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd> ;
+- Le lien est créé !
+> Plus simple : Dans le champ de la note de destination, cliquez sur le bouton <span class="tab-button active">Lier</span> ou appuyez sur <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd>, cherchez le recto de la carte à lier et insérez la.
 
-Lorsque vous consulterez la note, si vous cliquez sur le NID, le navigateur s'ouvrira sur la note que vous avez liée.
+Lorsque vous révisez, passez la souris sur le lien pour afficher un aperçu de la carte liée sans quitter votre révision. Vous pouvez aussi utiliser les raccourcis <kbd>P</kbd>, <kbd>R</kbd> et <kbd>N</kbd> pour naviguer entre les cartes liées.
+Vous pouvez cliquer pour éditer la carte aperçu.
 
 ## Soumettre
 

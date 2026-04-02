@@ -4,6 +4,14 @@
 Pour savoir comment installer un add-on, référez-vous au [tuto d'installation](./installation.md).
 
 <h4>
+  <a href="https://ankiweb.net/shared/info/1674438508">EDN Progress</a> 
+  <span class="copy-block" onclick="copyText(this)"><code>1674438508</code><span class="copy-feedback">Copié ✅</span></span>
+</h4>
+
+- Permet d'afficher votre progression sur le deck Anki EDN (pourcentage d'items vus par rangs, matières, etc.).
+- Raccourci : <kbd>Ctrl</kbd> + <kbd>U</kbd>.
+
+<h4>
   Pour les externes compétitifs : <a href="https://ankiweb.net/shared/info/175794613">Anki leaderboard</a> 
   <span class="copy-block" onclick="copyText(this)"><code>175794613</code><span class="copy-feedback">Copié ✅</span></span>
   <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span> 

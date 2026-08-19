@@ -81,7 +81,7 @@ Pour savoir comment installer un add-on, référez-vous au [tuto d'installation]
 - Simplifie l'interface de révision en ne gardant que deux boutons (Échec / Réussite), ce qui permet de réviser plus rapidement tout en restant parfaitement compatible avec l'algorithme FSRS.
 
 <h4>
-  Pour garder le rythme : <a href="https://ankiweb.net/shared/info/1010827105">Auto Reveal</a> 
+  <a href="https://ankiweb.net/shared/info/1010827105">Auto Reveal</a> — Pour garder le rythme
   <span class="copy-block" onclick="copyText(this)"><code>1010827105</code><span class="copy-feedback">Copié ✅</span></span>
   <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span> 
 </h4>
@@ -94,6 +94,14 @@ Cet add‑on permet de ne pas "zone out" sur une carte.
     <figure style="width: 500px;">
         <img src="./images/auto reveal.png" alt="Configuration Auto Reveal"/>
     </figure>
+
+<h4>
+  <a href="https://ankiweb.net/shared/info/1046608507">Speed Focus Mode</a>
+  <span class="copy-block" onclick="copyText(this)"><code>1046608507</code><span class="copy-feedback">Copié ✅</span></span>
+</h4>
+
+- Permet de **garder le rythme** en révélant automatiquement la réponse, en jouant une alerte sonore ou en passant à la carte suivante si vous prenez trop de temps à répondre.
+- Idéal pour accélérer vos sessions de révision et éviter de stagner trop longtemps sur une même carte.
 
 
 ### WorkFlow
@@ -144,6 +152,10 @@ Cet add‑on permet de ne pas "zone out" sur une carte.
   - [Linexplain — rappels thérapeutiques](https://www.youtube.com/results?search_query=Linexplain)
   - [Docteur Par Coeur — Bactéries / Antibio](https://www.youtube.com/watch?v=LJ1jJbRaTcg&list=PLz3OcroAK7ew7wc5670lHEN3W-aSXVUg-)
   - [Docteur astuce — mémotechniques](https://www.youtube.com/@DrAstuce/playlists)
+  - Hémato — Hémostase :
+    - [Vidéo 1 — Hémostase primaire](https://www.youtube.com/watch?v=4VhsNuK0OgY)
+    - [Vidéo 2 — Coagulation](https://www.youtube.com/watch?v=SGzp9wqeu84)
+  - [ECG Lyon](https://www.youtube.com/results?search_query=ECG+Lyon)
 
 
 - Images cliniques et entraînement
@@ -172,4 +184,3 @@ Pour mapper les touches de la manette aux actions Anki :
 Dans `Préférences > Révision` (<kbd>Ctrl</kbd>+<kbd>P</kbd> / <kbd>Cmd</kbd>+<kbd>,</kbd>), vous pouvez décocher :
 - **« Afficher le nombre de cartes restantes »** — pour ne plus voir le compteur de cartes pendant les révisions
 - **« Afficher la date de la prochaine révision au dessus des boutons »** — pour ne pas être distrait par les intervalles futurs
-

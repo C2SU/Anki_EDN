@@ -140,7 +140,8 @@ document.querySelectorAll(".gif-wrapper").forEach(wrapper => {
     figure.appendChild(figcaption);
   }
 
-  wrapper.parentNode.insertBefore(figure, wrapper.nextSibling);
+  const insertTarget = wrapper.closest("h1, h2, h3, h4, h5, h6") || wrapper;
+  insertTarget.parentNode.insertBefore(figure, insertTarget.nextSibling);
 
   let isVideoVisible = false;
   btn.addEventListener("click", () => {
@@ -171,15 +172,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const footer = document.createElement('footer');
     footer.className = 'site-footer';
     footer.innerHTML = `
-        <div class="copyright">© 2025 Pole Info – Tous droits réservés</div>
-        <div class="teamInfo">Site par Angelo MARCIS</div>
-        <p class="social-icons">
-          <a href="https://discord.gg/2A7zHAEBYt" target="_blank">
-            <img src="images/discord-logo.svg" alt="Discord" class="social-logo">
-          </a>
-          <a href="https://facebook.com/TA_PAGE" target="_blank">
-            <img src="images/facebook-logo.svg" alt="Facebook" class="social-logo">
-          </a>
+        <p>© 2026 Pole Info – Tous droits réservés</p>
+        <p>Site par Angelo MARCIS</p>
+        <div class="social-icons">
+          <figure>
+            <a href="https://discord.gg/2A7zHAEBYt" target="_blank" aria-label="Discord">
+              <img src="images/discord-logo.svg" alt="Discord" class="social-logo">
+            </a>
+            <figcaption>Discord</figcaption>
+          </figure>
+          <figure>
+            <a href="https://github.com/C2SU/Anki_EDN" target="_blank" aria-label="GitHub">
+              <img src="images/github-logo.svg" alt="GitHub" class="social-logo">
+            </a>
+            <figcaption>GitHub</figcaption>
+          </figure>
+        </div>
+        <p class="footer-contribute">
+          🤝 Ce deck est maintenu par la communauté — 
+          <a href="https://github.com/C2SU/Anki_EDN" target="_blank">contribuez sur GitHub</a> 
+          pour l'améliorer !
         </p>
       `;
     document.body.appendChild(footer);
@@ -192,6 +204,14 @@ document.addEventListener('DOMContentLoaded', () => {
     m.content = 'Pole Info';
     document.head.appendChild(m);
   }
+
+  // Rewrite missions.html link to Notion directly
+  const missionsLinks = document.querySelectorAll('a[href*="missions.html"]');
+  missionsLinks.forEach(link => {
+    link.href = 'https://melodic-sense-18f.notion.site/Missions-prendre-2d4d9253bfce807385c6cf8e08bbe4d6';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+  });
 });
 
 /* ==== FALLBACK MÉDIAS GLOBAUX ==== */
@@ -311,31 +331,111 @@ const formattedDate = `${month}/${year}`;
 
   const imgElement = document.createElement('img');
   imgElement.className = 'lightbox-img';
+  imgElement.style.cursor = 'zoom-in';
 
   const closeBtn = document.createElement('button');
   closeBtn.className = 'lightbox-close';
   closeBtn.innerHTML = '&times;';
 
+  const captionElement = document.createElement('div');
+  captionElement.className = 'lightbox-caption';
+
+  const prevBtn = document.createElement('button');
+  prevBtn.className = 'lightbox-prev';
+  prevBtn.innerHTML = '❮';
+
+  const nextBtn = document.createElement('button');
+  nextBtn.className = 'lightbox-next';
+  nextBtn.innerHTML = '❯';
+
   overlay.appendChild(imgElement);
   overlay.appendChild(closeBtn);
+  overlay.appendChild(captionElement);
+  overlay.appendChild(prevBtn);
+  overlay.appendChild(nextBtn);
   document.body.appendChild(overlay);
 
+  let currentGroup = [];
+  let currentGroupIndex = -1;
+
   // Functions
-  const openLightbox = (src) => {
-    imgElement.src = src;
-    overlay.style.display = 'flex';
-    // Trigger animations
-    overlay.style.animation = 'none';
-    imgElement.style.animation = 'none';
-    // Force reflow
-    void overlay.offsetWidth;
+  const openLightbox = (index, isNavigation = false) => {
+    currentGroupIndex = index;
+    const img = currentGroup[currentGroupIndex];
+    if (!img) return;
 
-    overlay.style.animation = 'fadeIn 0.3s forwards';
-    imgElement.style.animation = 'zoomIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards';
+    const updateContent = () => {
+      imgElement.src = img.src;
 
-    // Pause other animations (carousel)
-    document.dispatchEvent(new Event('pause-animations'));
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
+      // Reset zoom state
+      imgElement.classList.remove('zoomed');
+      overlay.classList.remove('zoomed-mode');
+      imgElement.style.cursor = 'zoom-in';
+
+      // Get caption
+      let captionText = '';
+      const figure = img.closest('figure');
+      if (figure) {
+        const figcaption = figure.querySelector('figcaption');
+        if (figcaption) {
+          captionText = figcaption.textContent;
+        }
+      }
+      if (!captionText && img.alt) {
+        captionText = img.alt;
+      }
+      
+      captionElement.textContent = captionText;
+      captionElement.style.display = captionText ? 'block' : 'none';
+
+      // Show/hide navigation arrows
+      if (currentGroup.length > 1) {
+        prevBtn.style.display = 'flex';
+        nextBtn.style.display = 'flex';
+      } else {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+      }
+    };
+
+    if (isNavigation) {
+      // Smooth transition for navigation
+      imgElement.classList.add('lightbox-changing');
+      captionElement.classList.add('lightbox-changing');
+
+      setTimeout(() => {
+        updateContent();
+        
+        // Remove changing class after image is loaded to avoid visual flashes
+        const onImageLoad = () => {
+          imgElement.classList.remove('lightbox-changing');
+          captionElement.classList.remove('lightbox-changing');
+          imgElement.removeEventListener('load', onImageLoad);
+        };
+        imgElement.addEventListener('load', onImageLoad);
+        // Fallback safety timeout
+        setTimeout(() => {
+          imgElement.classList.remove('lightbox-changing');
+          captionElement.classList.remove('lightbox-changing');
+          imgElement.removeEventListener('load', onImageLoad);
+        }, 1000);
+      }, 200); // matches the CSS transition duration
+    } else {
+      // First open: trigger overlay and zoom entry animations
+      updateContent();
+      overlay.style.display = 'flex';
+      
+      overlay.style.animation = 'none';
+      imgElement.style.animation = 'none';
+      void overlay.offsetWidth; // force reflow
+
+      overlay.style.animation = 'fadeIn 0.3s forwards';
+      imgElement.style.animation = 'zoomIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards';
+
+      // Pause other animations (carousel)
+      document.dispatchEvent(new Event('pause-animations'));
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
   };
 
   const closeLightbox = () => {
@@ -343,6 +443,8 @@ const formattedDate = `${month}/${year}`;
     setTimeout(() => {
       overlay.style.display = 'none';
       imgElement.src = '';
+      imgElement.classList.remove('zoomed');
+      overlay.classList.remove('zoomed-mode');
     }, 300); // Match animation duration
 
     // Resume animations
@@ -352,23 +454,56 @@ const formattedDate = `${month}/${year}`;
 
   // Event Listeners
   overlay.addEventListener('click', (e) => {
-    if (e.target !== imgElement) {
+    if (e.target === overlay || e.target === closeBtn) {
       closeLightbox();
     }
   });
 
-  closeBtn.addEventListener('click', closeLightbox);
+  imgElement.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (imgElement.classList.contains('zoomed')) {
+      imgElement.classList.remove('zoomed');
+      overlay.classList.remove('zoomed-mode');
+      imgElement.style.cursor = 'zoom-in';
+    } else {
+      imgElement.classList.add('zoomed');
+      overlay.classList.add('zoomed-mode');
+      imgElement.style.cursor = 'zoom-out';
+    }
+  });
 
-  // Close on Escape
+  prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (currentGroup.length > 1) {
+      const prevIndex = (currentGroupIndex - 1 + currentGroup.length) % currentGroup.length;
+      openLightbox(prevIndex, true);
+    }
+  });
+
+  nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (currentGroup.length > 1) {
+      const nextIndex = (currentGroupIndex + 1) % currentGroup.length;
+      openLightbox(nextIndex, true);
+    }
+  });
+
+  // Close or navigate on keydown
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && overlay.style.display === 'flex') {
-      closeLightbox();
+    if (overlay.style.display === 'flex' || overlay.style.display === 'block') {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      } else if (e.key === 'ArrowRight' && currentGroup.length > 1) {
+        const nextIndex = (currentGroupIndex + 1) % currentGroup.length;
+        openLightbox(nextIndex, true);
+      } else if (e.key === 'ArrowLeft' && currentGroup.length > 1) {
+        const prevIndex = (currentGroupIndex - 1 + currentGroup.length) % currentGroup.length;
+        openLightbox(prevIndex, true);
+      }
     }
   });
 
   // Attach to images
-  // We attach to all images in figures, carousels, or with specfic classes.
-  // Excluding small icons or UI elements if needed.
   const attachLightbox = () => {
     const selectors = [
       'figure img',
@@ -385,7 +520,14 @@ const formattedDate = `${month}/${year}`;
 
       img.classList.add('clickable-zoom');
       img.addEventListener('click', () => {
-        openLightbox(img.src);
+        const carousel = img.closest('.carousel-container');
+        if (carousel) {
+          currentGroup = Array.from(carousel.querySelectorAll('.carousel-slide img'));
+        } else {
+          currentGroup = [img];
+        }
+        const index = currentGroup.indexOf(img);
+        openLightbox(index >= 0 ? index : 0);
       });
     });
   };
@@ -397,4 +539,25 @@ const formattedDate = `${month}/${year}`;
     attachLightbox();
   }
 
+})();
+
+// Event delegation to rewrite any links to missions.html to Notion
+(function() {
+  const notionUrl = 'https://melodic-sense-18f.notion.site/Missions-prendre-2d4d9253bfce807385c6cf8e08bbe4d6';
+  const rewriteLink = (link) => {
+    if (link && link.getAttribute('href') && link.getAttribute('href').includes('missions.html')) {
+      link.href = notionUrl;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+  };
+
+  document.addEventListener('mouseover', (e) => rewriteLink(e.target.closest('a')));
+  document.addEventListener('focusin', (e) => rewriteLink(e.target.closest('a')));
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (link && link.getAttribute('href') && link.getAttribute('href').includes('missions.html')) {
+      rewriteLink(link);
+    }
+  });
 })();

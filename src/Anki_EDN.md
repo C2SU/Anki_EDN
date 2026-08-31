@@ -9,7 +9,7 @@
     <span class="stat-label">Utilisateurs</span>
   </div>
 </div>
-Anki EDN est un projet qui se base sur le travail et la méthodologie de [Léo Picat](https://picat.fr) (interne en MAR à Paris depuis 2024). Nous voulons rendre son paquet de flashcards collaboratif et communautaire pour le faire perdurer. *L'installation particulière sera expliquée au fil de ce tuto*.
+Anki EDN est un projet qui se base sur le travail et la méthodologie de [Léo Picat](https://picat.fr) (interne en MAR à Paris). Nous voulons rendre son paquet de flashcards collaboratif et communautaire pour le faire perdurer.
 
 Il faut compter **10 minutes** de lecture avant de pouvoir utiliser les cartes Anki de ce **paquet (presque) exhaustif** qui vous mèneront aux EDN. 
 <div class="carousel-container">
@@ -40,14 +40,9 @@ Il faut compter **10 minutes** de lecture avant de pouvoir utiliser les cartes A
 📱 Pour travailler sur tablette ou téléphone, utilisez les applications **AnkiDroid** / **AnkiMobile** ou **AnkiWeb**. 
 > Le support le plus complet reste Anki sur ordinateur, peu importe le système d'exploitation.
 
-Ce paquet se distingue par la brièveté des cartes et par un système de mise en contexte des cartes. Tout cela rend favorable la rétention des informations à très long terme. 
+Ce paquet se distingue par la brièveté des cartes et par un système de mise en contexte des cartes. Tout cela rend favorable la rétention des informations à très long terme. Rejoignez [Notre Discord](https://discord.gg/2A7zHAEBYt) pour recevoir de l'aide et contribuer au projet.
 
-## Les liens
-- [Notre Discord](https://discord.gg/2A7zHAEBYt)
-- [La communauté des externes utilisant Anki](https://www.facebook.com/groups/anki.ecni), avec qui vous pouvez partager et poser des questions techniques.
-- La [doc de Léo Picat](https://picat.fr/2024/06/02/paquet-anki-edn.html)  
-- La [doc d'AnkiCollab](https://github.com/CravingCrates/AnkiCollab-Plugin/tree/main).
-### Je n'ai jamais utilisé Anki
+### "Je n'ai jamais utilisé Anki"
 - Jetez un coup d'œil à [ce document](https://drive.google.com/file/d/1UWSg3gj3PyIJq0oXetesZVlbJuRGxLrA/view?usp=drive_link).
 - Ensuite [ce drive vous sera utile](https://drive.google.com/drive/u/0/folders/1M9hg4EMRoFRQ4wh_E2xIOu_bKmg7ze59).
 
@@ -56,15 +51,15 @@ Ce paquet se distingue par la brièveté des cartes et par un système de mise e
 
 ### 1. Anki <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
 
-- [Créez un compte AnkiWeb](https://ankiweb.net/account/signup);
+- [Créez un compte AnkiWeb](https://ankiweb.net/account/signup) ;
 - Acceptez "Terms and Conditions" et vérifiez votre mail.
 - [Installez Anki sur votre ordinateur](https://apps.ankiweb.net/#downloads) ;
 - Une fois sur l'application, appuyez sur <span class="tab-button active">synchronisation</span> ou sur la touche <kbd>Y</kbd> puis connectez‑vous à votre compte AnkiWeb ;
 - Allez dans `Outil > Greffons > Acquérir des greffons` ou <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>A</kbd> et collez 
 <span class="copy-block" onclick="copyText(this)">
-  <code>1957538407 501542723 1052724801 445658251 2135076010 1906641654 2040501954</code>
+  <code>1957538407 501542723 1052724801 445658251 2135076010 303415230 1906641654 2040501954</code>
   <span class="copy-feedback"> Copié ✅</span>
-</span>. On a installé ça[^1].
+</span> On a installé ça[^1].
 
 ### 2. AnkiCollab et téléchargement du deck <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
 
@@ -72,7 +67,7 @@ Ce paquet se distingue par la brièveté des cartes et par un système de mise e
 - Relancez Anki, allez dans `AnkiCollab > Login` puis `AnkiCollab > Edit Subscriptions` et collez <span class="copy-block" onclick="copyText(this)">
   <code>mango-may-georgia-eleven-moon-orange</code>
   <span class="copy-feedback">Copié ✅</span>
-</span>.
+</span>
 - Toujours dans `AnkiCollab > Edit Subscriptions`, allez dans `🛠️ Global Settings` et activez `Check for Updates on Startup` et `Automatically suspend new Cards` ;
 - Vous avez téléchargé le deck Anki EDN !
 ### 3. Faire fonctionner Lien entre les cartes (réparation des NID) <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
@@ -108,7 +103,7 @@ Nous les optimisons de façon à ce que l'utilisation du paquet ne soit pas trop
 > Lors de la première révision, les espacements entre les révisions sont très grands et peuvent surprendre. Dès votre 3e jour de révisions, dans `FSRS` cliquez sur `Optimiser`. Répétez l'opération toutes les 2 semaines puis tous les mois ! (Créez un rappel)  
 Pour en savoir plus sur les paramètres, [référez‑vous à cette vidéo](https://www.youtube.com/watch?v=uo-qQvOZDfg).
 
-## Découverte
+## Premier pas avec Anki EDN
 
 Une fois que vous avez installé le paquet, il y a 2 choses à faire en priorité :
 
@@ -125,7 +120,7 @@ Une fois que vous avez installé le paquet, il y a 2 choses à faire en priorit�
     - Sélectionnez toutes les cartes via <kbd>Ctrl</kbd>+<kbd>A</kbd> ou <kbd>Cmd</kbd>+<kbd>A</kbd> ;
     - Suspendez les cartes via <kbd>Ctrl</kbd>+<kbd>J</kbd> ou <kbd>Cmd</kbd>+<kbd>J</kbd> ou via un clic droit > <code>Suspendre/Reprendre</code>.
 
-## Réviser un nouvel item
+### Réviser un nouvel item
 
 > Avant de commencer à réviser les fiches Anki, il faut avoir une bonne compréhension du cours.  
 Sinon, vous serez déroutés par l'ordre aléatoire des cartes.
@@ -139,7 +134,6 @@ Sinon, vous serez déroutés par l'ordre aléatoire des cartes.
 ---
 
 ## Les abréviations et symboles
-### Vous allez avoir besoin de cette liste
 C'est un point qui rend plus difficile l'appropriation du paquet.
 L'utilisation des symboles permet d'alléger le contenu des cartes et de ne pas les polluer avec des mots de liaison inutiles. On peut alors se concentrer sur le contenu intéressant des cartes.
 > Ne vous effrayez pas avec cette liste maintenant. 
@@ -205,7 +199,7 @@ L'utilisation des symboles permet d'alléger le contenu des cartes et de ne pas 
   - M<i>n</i> pour "au mois <i>n</i>" ou "à l'âge de <i>n</i> mois"
   - A<i>n</i> pour "à l'année <i>n</i>" ou "à l'âge de <i>n</i> ans"
 
-## Pour utiliser les abréviations
+### Rédiger à l'aide des abréviations
 
   - Pour obtenir les icônes dans votre éditeur :
     - <a href="./assets/raccourcis.csv" download>Télécharger ce fichier</a>
@@ -243,7 +237,6 @@ Voici comment peuvent s'utiliser les drapeaux :
 - <span style="color: #F87171;" class="flag-anki-button">Rouge</span> pour les cartes qui doivent être modifiées ;
 - <span style="color: #FDBA74;" class="flag-anki-button">Orange</span> pour les cartes que vous considérez comme difficiles ;
 - <span style="color: #86EFAC;" class="flag-anki-button">Vert</span> pour les cartes importantes ;
-- <span style="color: #60A5FA;" class="flag-anki-button">Bleu</span> pour les cartes qui peuvent être améliorées (avec une illustration par exemple).
 
 ### Les paquets
 
@@ -254,6 +247,8 @@ Car :
 - une carte peut avoir plusieurs étiquettes.
 
 Nous **utilisons donc des étiquettes pour classer vos cartes** et le paquet sert uniquement à **rassembler les cartes à réviser**. Compte tenu des exigences de l'EDN, toutes les cartes sont à réviser de la même façon[^approximation-rang].
+#### "Je préfère travailler avec des paquets de matières / d'items"
+
 
 ### Bien réviser
 #### Révisions des cartes
@@ -467,13 +462,12 @@ absolue au rapport pour 100 000, il faut simplement multiplier par 660 (en compt
 
 Il y a 5 types de notes principaux :
 
-- **Basique**, avec un Recto et un Verso qui crée une carte : Recto → Verso ;
+- **Basique**, avec un Recto et un Verso;
 - **Texte à trous**,
-- **Sémiologie**, un champ Image (du signe), un champ Nom (du signe), et un
-  champ Description (du signe). Cela crée 3 cartes : Image → Nom, Nom →
+- **Sémiologie**, un champ Image, un champ Nom et un
+  champ Description. Cela crée 3 cartes : Image → Nom, Nom →
   Description et Description → Nom ;
-- **Syndrome**, un champ Nom (du syndrome), et un champ Description (du
-  syndrome). Cela crée 2 cartes : Nom → Description et Description → Nom.
+- **Syndrome**, un champ Nom, et un champ Description. Cela crée 2 cartes : Nom → Description et Description → Nom.
 
 <figure>
     <img src="./images/paquet-edn-exemple-syndrome.png" alt="Sorry the link is broken..."/>
@@ -495,11 +489,6 @@ Les cartes considérées comme difficiles apparaissent différemment pendant les
     <img src="./images/paquet-edn-exemple-difficile.png" alt="Sorry the link is broken..."/>
     <figcaption>Un liseré rouge permet d'identifier en un clin d'œil les cartes avec lesquels on a le plus de mal.</figcaption>
 </figure>
-
-Il y a 2 façons de marquer une carte comme difficile :
-
-- en lui appliquant le drapeau <span style="color: #FDBA74;" class="flag-anki-button">orange</span> ;
-- en lui attribuant un tag `Difficile`.
 
 #### Autre
 
@@ -540,83 +529,94 @@ Vous pouvez donc partager et modifier les cartes sous 3 conditions :
 
 ## FAQ
 
-### Comment réviser les items transverses ? (parasito, pharma...)
-Utilisez les tags et l'explorateur ! `tag:Infectiologie::Parasites` est très complet par exemple.
+#### Pourquoi mon paquet affiche 0 carte à réviser après l'installation ?
+Par défaut, toutes les cartes du deck sont suspendues afin d'éviter d'accumuler une charge ingérable dès le départ. Consultez la section [Premier pas avec Anki EDN](#premier-pas-avec-anki-edn) pour apprendre à sélectionner et désuspendre les cartes de vos items au fur et à mesure.
 
-### Comment réviser item par item ou par matière 
-Cliquer sur "Outils" > Créer un paquet filtré. Ou tapez `F`.
-Définir le filtre : Dans le champ "Recherche", tapez vos critères (ex: `tag:Cardiologie` et `is:due`). Ou si vous voulez réviser par item : (ex: `tag::item155` et `is:due`)
-Dans les options : sélectionner "replanifier les cartes selon mes réponses dans ce paquet"
-Valider : Cliquez sur "Construire". Le paquet apparaîtra en bleu dans votre liste.
-A la fin de votre révision, toutes les cartes reviendront dans le paquet général "Anki EDN"
-Si le lendemain vous voulez réviser le paquet filtré de nouveau, cliquez sur "reconstruire"
+#### J'utilisais déjà le paquet de Léo Picat : comment passer sur Anki EDN sans perdre ma progression ?
+Le paquet Anki EDN reprend la base du paquet initial en y intégrant les mises à jour collaboratives.
+1. Faites une sauvegarde préalable de votre collection (`Fichier > Créer une sauvegarde`).
+2. Si vous avez personnalisé certaines cartes déjà apprises, protégez-les avec l'étiquette `AnkiCollab_Protect::All`.
+3. Suivez la procédure dans [Première installation](#première-installation--anki-ankicollab-téléchargement-du-deck-et-add-ons). Vos statistiques de révision existantes seront conservées sur les cartes correspondantes.
 
-### Prendre une pause (week-end ou vacances) 
-Avec **FSRS Helper**, vous pouvez planifier vos pauses sans accumuler un retard insurmontable. 
+#### Pourquoi les nouvelles cartes d'un item apparaissent-elles dans le désordre lors de l'apprentissage ?
+Dans le paquet principal, Anki présente les nouvelles cartes selon l'ordre général configuré dans vos options. Pour étudier un item spécifique de manière groupée avant de le mélanger au reste :
+1. Créez un paquet filtré temporaire en appuyant sur la touche <kbd>F</kbd>.
+2. Dans le champ de recherche, entrez : `tag:EDN::item-XXX is:new` (remplacez `XXX` par le numéro de l'item).
+3. Cochez l'option *Replanifier les cartes selon mes réponses dans ce paquet*.
+4. Une fois votre séance terminée, supprimez le paquet filtré : les cartes retournent automatiquement dans le paquet principal avec leurs nouveaux intervalles FSRS.
 
-#### 1. Programmer des jours faciles à l'avance
+#### Puis-je déplacer les cartes dans des sous-paquets permanents par matière ?
+Non, c'est déconseillé. AnkiCollab gère les cartes rattachées au paquet unique `Anki EDN`. Si vous déplacez manuellement des cartes dans un autre paquet, toute mise à jour ultérieure les rapatriera automatiquement dans le paquet principal. Pour travailler par matière ou item, privilégiez les paquets filtrés temporaires (<kbd>F</kbd>) décrits dans [Organisation du Deck](#les-paquets).
 
-- Dès que vous connaissez vos dates de pause, configurez des `jours faciles` dans FSRS Helper pour réduire la charge de travail pendant cette période.
+#### Réviser les items transverses (parasito, pharma...)
+Utilisez les étiquettes et l'explorateur : par exemple, la recherche `tag:Infectiologie::Parasites` regroupe l'ensemble des cartes transversales associées.
 
-- Ouvrez le menu `FSRS Helper` dans `Options`
-- Sélectionnez `Jours faciles avec moins de révisions` puis `Appliquer les jours faciles à des dates spécifiques`
-- Indiquez vos dates de pause.
+#### Réviser item par item / par matière
+1. Appuyez sur <kbd>F</kbd> (ou `Outils > Créer un paquet filtré`).
+2. Dans le champ "Recherche", renseignez vos critères (par exemple : `tag:Cardiologie is:due` ou `tag:EDN::item-155 is:due`).
+3. Cochez "Replanifier les cartes selon mes réponses dans ce paquet" puis validez par "Construire".
+4. A la fin de votre révision, les cartes réintègrent automatiquement le paquet général "Anki EDN".
 
-#### 2. La veille de votre pause : « Schedule a Break »
+#### Que signifient les cartes marquées d'une étoile ?
+L'étoile correspond au marqueur natif d'Anki (`tag:marked`, activé par <kbd>Ctrl</kbd>+<kbd>K</kbd> ou <kbd>*</kbd>). Elle ne correspond pas aux annales du concours. Pour hiérarchiser vos cartes, utilisez le système de repérage expliqué dans [Les drapeaux](#les-drapeaux).
 
-**La veille du départ**, utilisez la fonction `Schedule a Break` pour redistribuer les cartes prévues pendant votre absence sur les jours qui suivent votre retour.
+#### Prendre une pause (week-end / vacances)
+Avec **FSRS Helper**, vous pouvez planifier vos absences sans accumuler de retard :
+- **Jours faciles à l'avance** : `Options > FSRS Helper > Jours faciles avec moins de révisions > Appliquer les jours faciles à des dates spécifiques`.
+- **La veille du départ** : `Options > FSRS Helper > Schedule a Break` et indiquez la durée de votre interruption.
 
-- Dans `Options` > `FSRS Helper` > `Schedule a Break`
-- Indiquez le nombre de jours de votre pause (par exemple, 3 pour un week-end prolongé)
+#### Les ECOS alors ?
+Le paquet n'est pas conçu pour la préparation aux ECOS. Les contributions pour développer ce volet sont les bienvenues.
 
-### Préparer les ECOS avec Anki EDN ?
-- Le paquet n'est pour le moment PAS une préparation aux ECOS. Nous sommes ouvert à toute aide !
+#### Comment fonctionnent les mises à jour et sont-elles automatiques ?
+Les modifications validées par les référents sont publiées sur le deck collaboratif. Au démarrage d'Anki sur votre ordinateur connecté à Internet, une notification vous propose d'appliquer la mise à jour.
 
-### Comment fonctionnent les mises à jour (MAJ) et sont-elles automatiques ?
-Les modifications proposées par la communauté et validées par les référents sont implémentées dans le deck collaboratif. Au démarrage d'Anki sur votre ordinateur (connecté à internet), une notification vous proposera de télécharger la mise à jour.
+#### Puis-je recevoir les mises à jour sur mon téléphone (iOS/Android) ?
+L'add-on AnkiCollab fonctionne uniquement sur ordinateur. Pour répercuter les nouveautés sur mobile : ouvrez Anki sur votre ordinateur pour récupérer les mises à jour, puis synchronisez avec votre compte AnkiWeb avant d'ouvrir votre application mobile.
 
-### Puis-je réviser et recevoir les mises à jour sur mon application mobile (iOS/Android) ?
-Vous pouvez tout à fait réviser sur mobile. Cependant, le plugin **AnkiCollab** (qui gère les mises à jour) ne fonctionne que sur ordinateur. 
-**Pour obtenir les mises à jour :** démarrez de temps en temps Anki sur votre ordinateur pour télécharger les MAJ, puis synchronisez votre profil avec AnkiWeb pour répercuter les changements sur votre application mobile.
+#### Faut-il un compte AnkiWeb pour utiliser Anki EDN ?
+Un compte AnkiCollab suffit pour un usage sur un poste unique. En revanche, un compte AnkiWeb est indispensable pour synchroniser votre progression entre plusieurs appareils.
 
-### Est-ce obligatoire d'avoir un compte AnkiWeb pour utiliser Anki EDN ?
-Un compte AnkiCollab suffit si vous révisez exclusivement sur un seul ordinateur local. En revanche, un compte **AnkiWeb** est obligatoire pour synchroniser vos cartes et votre progression entre plusieurs appareils (ordinateur, téléphone, tablette).
+#### Mes notifications de mise à jour n'apparaissent pas au démarrage
+1. Vérifiez votre connexion dans `AnkiCollab > Login`.
+2. Dans `AnkiCollab > Edit Subscriptions > Global Settings`, assurez-vous que l'option *Check for Updates on Startup* est bien cochée.
 
-### Pourquoi mes notifications de mise à jour n'apparaissent pas au démarrage ?
-1. Vérifiez que vous êtes correctement connecté à votre compte AnkiCollab.
-2. Allez dans le menu d'Anki : `AnkiCollab > Edit subscription > Global settings` et assurez-vous que l'option **"Update deck on startup"** est activée.
+#### Comment vérifier si une mise à jour d'un item a bien été appliquée sur mon deck ?
+- Pour visualiser les cartes mises à jour durant un mois précis, cherchez `tag:MAJ::MM/YY` dans l'explorateur (par exemple `tag:MAJ::11/25`).
+- Pour voir toutes les cartes modifiées récemment sur votre profil, utilisez le filtre `edited:2` (modifiées ces 2 derniers jours).
 
-### Comment vérifier si une mise à jour d'un item a bien été appliquée sur mon deck ?
-- Pour voir les cartes mises à jour durant un mois spécifique, recherchez `tag:MAJ::MM/YY` dans l'explorateur d'Anki (ex: `tag:MAJ::11/25` pour les MAJ de novembre 2025).
-- Pour voir toutes les cartes modifiées récemment (par exemple, ces 2 derniers jours), vous pouvez tapez `edited:2` dans l'explorateur.
+#### Vais-je perdre mes modifications personnelles lors des MAJ du deck ?
+Si une carte modifiée localement reçoit une mise à jour officielle, son contenu sera synchronisé avec la version collaborative.
+- **Protection totale de la note** : appliquez l'étiquette `AnkiCollab_Protect::All`.
+- **Protection des étiquettes seules** : appliquez l'étiquette `AnkiCollab_Protect::Tags` (vous recevrez les corrections de texte sans altérer vos classements de tags).
+- Le champ *Erreurs faites* est personnel et n'est jamais écrasé.
+- Pour des ajouts conséquents de contenu personnel, privilégiez la création de cartes distinctes.
 
-### Vais-je perdre mes modifications personnelles (images, texte) lors des MAJ du deck ?
-**Oui.** Si les champs d'une carte que vous avez modifiée localement reçoivent une mise à jour officielle de la part de l'équipe, vos modifications locales seront écrasées. 
-**Pour protéger vos modifications :**
-- **Pour une protection totale de la carte :** Ajoutez le tag `ankicollab_protect::all` sur la carte concernée.
-- **Pour ne protéger que vos étiquettes (tags) :** Ajoutez le tag `ankicollab_protect::tags` (cela permet de recevoir les modifications textuelles sans écraser vos tags personnels).
-- Notez que le champ *Erreurs faites* est quant à lui personnel et nativement protégé d'AnkiCollab.
-- Si vous souhaitez ajouter des notes importantes sans risque d'écrasement, il est préférable de créer vos propres cartes personnelles séparées plutôt que de modifier les cartes collaboratives du deck.
+#### Comment restaurer mes modifications personnelles après un incident sans altérer ma planification FSRS ?
+1. Créez un profil de secours temporaire (`Fichier > Changer de profil > Ajouter`).
+2. Ouvrez dans ce profil une sauvegarde antérieure automatique via le dossier `%appdata%/Anki2/[Profil]/backup/`.
+3. Dans l'explorateur du profil de secours, sélectionnez les cartes concernées (`deck:"Anki EDN" -is:suspended`) et exportez-les en `.apkg` en veillant à **décocher** *Inclure les données de planification*.
+4. Revenez sur votre profil principal et importez le fichier `.apkg` en sélectionnant l'option *Fusionner les types de notes*. Vos textes personnalisés seront réintégrés sans modifier vos échéances de révision.
 
-### Que signifie le message indiquant que des cartes ont été supprimées lors de la synchronisation ?
-Ces cartes ont été retirées du deck collaboratif par les référents (souvent car elles étaient redondantes ou obsolètes). AnkiCollab vous permet de choisir : vous pouvez les conserver localement (par exemple si vous les avez déjà apprises) ou les laisser se supprimer pour rester synchrone avec le deck officiel.
+#### Que signifie le message indiquant que des cartes ont été supprimées après une synchronisation ?
+Ces cartes ont été retirées du deck officiel (obsolescence, doublon ou hors programme). AnkiCollab vous laisse le choix de les supprimer localement ou de les conserver.
 
-### Pourquoi mes images ne s'affichent pas (icône d'image cassée) ?
-Allez dans l'explorateur ou sur l'écran d'accueil, cliquez sur la roue crantée à droite du deck Anki EDN, puis sélectionnez l'option spécifique **Anki Collab Check Media** (et non pas le "Vérifier les médias" classique d'Anki).
+#### Pourquoi mes images ne s'affichent pas (icône d'image cassée) ?
+Cliquez sur la roue crantée située à droite du deck "Anki EDN" sur l'écran d'accueil, puis sélectionnez **Anki Collab Check Media** (et non la commande classique d'Anki).
 
-### Que faire si les liens entre les cartes ("cartes liées") renvoient vers une recherche vide ?
-Ce problème peut être dû à un défaut de liaison locale des identifiants uniques, à une divergence de profil, ou au fait que certains liens sont effectivement « morts » (la carte ciblée n'existe pas encore).
+#### Que faire si les liens entre les cartes renvoient vers une recherche vide ?
+1. **Réparation des identifiants** : sur l'écran d'accueil, cliquez sur **Anki EDN** puis sélectionnez **Réparer les NID**. Suivez les instructions et relancez Anki.
+2. **Divergence de profil** : si le problème persiste après réinstallation, consultez les étapes de synchronisation propre dans [Première installation](#3-faire-fonctionner-lien-entre-les-cartes-réparation-des-nid).
+3. **Liens non encore créés** : certaines cartes cibles n'ont pas encore été rédigées. Vous pouvez leur attribuer l'étiquette `empty-nid` pour les répertorier.
 
-**Résolution :**
-1. **Tentez d'abord de « réparer les NID » :**
-   Dans le menu principal d'Anki, cliquez sur le deck **Anki EDN**, sélectionnez l'option **⚠️ Réparer les NID**, cliquez sur **continuer**, attendez la fin de l'opération puis relancez Anki.
-2. **Si cela persiste :**
-   Il peut s'agir d'une divergence d'identifiants entre votre profil et le deck collaboratif. Exportez vos autres decks personnels sur votre bureau par sécurité. Supprimez votre profil Anki, recréez un profil propre, téléchargez le deck à l'aide du lien d'export `.apkg` d'un mainteneur (qui contient les `nid` d'origine corrects), puis connectez-vous à AnkiCollab. Vos futures MAJ se feront correctement et les liens fonctionneront.
-3. **Cas des liens morts :**
-   Certains liens sont effectivement morts car la carte liée n'a pas encore été créée. Ils doivent être signalés en leur attribuant l'étiquette (tag) `empty-nid` sur la carte concernée, avant qu'un utilisateur ne se charge plus tard de créer la carte correspondante.
+#### Comment lier deux cartes entre elles dans l'éditeur ?
+Copiez le NID de la carte cible, collez-le dans le champ "Cartes Liées", sélectionnez ce NID et cliquez sur le bouton **Lier** (ou <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd> / <kbd>Option</kbd>+<kbd>Cmd</kbd>+<kbd>L</kbd> sur macOS). Voir les détails dans [Pour créer des liens entre les cartes](#pour-créer-des-liens-entre-les-cartes).
 
-### Comment lier deux cartes entre elles de manière interactive dans l'éditeur ?
-Copiez le NID de la carte cible, collez-le dans le champ "Cartes liées" de votre carte, sélectionnez-le et cliquez sur le bouton **Lier** tout en haut de l'éditeur (ou utilisez le raccourci `Ctrl + Alt + L` / `Option + Cmd + L` sur Mac). Cela formatera automatiquement le lien pour permettre la prévisualisation au survol en cours de révision.
+#### Quelles sont les sources de référence utilisées pour les actualisations de cartes ?
+Les actualisations reposent sur les **dernières éditions des collèges d'enseignants de spécialités** qui font foi pour le concours, complétées par les fiches LiSA. En cas de contradiction entre deux collèges, la précision est apportée dans le champ *Infos supplémentaires* ou via l'étiquette `source::[Année]::[Spé]`.
+
+#### Que faire si un item n'a aucune carte ou très peu de cartes dans le deck ?
+Certains items transversaux spécifiques ne disposent pas encore de cartes complètes. Vous pouvez vérifier dans l'explorateur si les notions ne sont pas déjà couvertes sous d'autres étiquettes, ou proposer de nouvelles fiches en suivant le guide [Proposer une modification](#proposer-une-modification).
 
 ---
 
@@ -626,13 +626,13 @@ On identifie ces points faibles ci‑dessous :
 
 ### Liens morts
 
-Certains liens entre les cartes ne sont pas insérés. C'est principalement le cas quand la création d'une carte aurait relevé d'un micro‑détail (causes auto‑immunes très rares...).
+Certains liens entre les cartes ne sont pas insérés. C'est principalement le cas quand la création d'une carte aurait relevé d'un micro‑détail.
 
 Par ailleurs, tous les liens pertinents n'ont peut‑être pas été faits.
 
 ### Illustrations minimalistes
 
-Certaines cartes manquent d'illustrations ou d'images explicatives.
+Certaines cartes manquent d'illustrations ou d'images explicatives. On compte sur vous !
 
 ### Erreurs
 
@@ -650,15 +650,15 @@ Ce projet est à l'initiative d'Angelo Marciszewer et est hébergé par la Corpo
 
 ### Nous remercions spécifiquement
 
-L'équipe d'AnkiCollab ainsi que sa communauté.
-
-Léo Picat pour son deck, son add‑on, sa documentation et surtout sa gentillesse.
+- [Léo Picat](https://picat.fr/2024/06/02/paquet-anki-edn.html) pour son deck, son add‑on, sa documentation et surtout sa gentillesse.
+- L'équipe d'[AnkiCollab](https://github.com/CravingCrates/AnkiCollab-Plugin/tree/main) et sa communauté.
+- [La communauté des externes utilisant Anki](https://www.facebook.com/groups/anki.ecni).
 
 Les icônes sur les cartes viennent de Flaticon et Freepik.
 
 Le Pôle info, spécialement Alexandre, Ragy, Adib, Théo et Rostan.
 
-Matteo et Vlad !
+Matteo et Vladimir !
 
 Merci à Tim pour m'avoir aidé à créer ce site.
 
@@ -670,13 +670,13 @@ Merci à tous les contributeurs ainsi qu'à leurs relecteurs !
 
 Enfin, merci à tous les étudiants qui nous ont donné des retours.
 
----
-
 [^1]: Les greffons installés : 
     - 1957538407 - [AnkiCollab](https://ankiweb.net/shared/info/1957538407) : Pour que AnkiCollab fonctionne !
     - 501542723 - [Auto Sync](https://ankiweb.net/shared/info/501542723) : Pour ne pas perdre votre progression.
     - 445658251 - [Lier les Cartes (Anki EDN)](https://ankiweb.net/shared/info/445658251) : Add‑on inhérent au paquet pour naviguer entre les cartes liées (très important).
+    - 2135076010 - [Anki EDN NID](https://ankiweb.net/shared/info/2135076010) : Pour réparer et mettre à jour les identifiants (NID) des cartes liées.
     - 1052724801 - [BetterSearch](https://ankiweb.net/shared/info/1052724801) : Pour naviguer facilement entre les tags (très important).
+    - 303415230 - [ReColor Suspended Cards](https://ankiweb.net/shared/info/303415230) : Pour repérer visuellement les cartes suspendues même en mode "Notes" dans l'explorateur.
     - 1906641654 - [See Previous Card Ratings in Reviewer](https://ankiweb.net/shared/info/1906641654) : Pour connaître la difficulté des cartes.
     - 2040501954 - [Symbols As You Type](https://ankiweb.net/shared/info/2040501954) : Pour éditer facilement les cartes.
 

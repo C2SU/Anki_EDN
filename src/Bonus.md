@@ -53,9 +53,21 @@ Pour savoir comment installer un add-on, référez-vous au [tuto d'installation]
     <img src="./images/mortican.png" alt="Configuration Mortician"/>
 </figure>
 
-#### [Review Heatmap](https://ankiweb.net/shared/info/1771074083) <span class="copy-block" onclick="copyText(this)">    <code>1771074083</code>    <span class="copy-feedback">Copié ✅</span></span>
+#### [FLUX Heatmap & Gamification](https://ankiweb.net/shared/info/161867424) <span class="copy-block" onclick="copyText(this)">    <code>161867424</code>    <span class="copy-feedback">Copié ✅</span></span>
 
-- Affiche votre assiduité sous forme de calendrier (et permet de voir votre programme).
+- Affiche votre assiduité sous forme de calendrier (heatmap) détaillée avec prévisions de charge et intègre un système de progression.
+
+#### [Quick Image Search](https://ankiweb.net/shared/info/183246496) <span class="copy-block" onclick="copyText(this)">    <code>183246496</code>    <span class="copy-feedback">Copié ✅</span></span>
+
+- Ajoute un bouton dans l'éditeur pour lancer instantanément une recherche Google Images sur le recto de la carte pour ajouter une illustration en un clic.
+
+#### [More Overview Stats 2.1](https://ankiweb.net/shared/info/738807903) <span class="copy-block" onclick="copyText(this)">    <code>738807903</code>    <span class="copy-feedback">Copié ✅</span></span>
+
+- Enrichit l'écran d'accueil d'Anki avec des statistiques détaillées sur vos paquets et estime la date de fin d'apprentissage selon votre rythme.
+
+#### [FocusForce](https://ankiweb.net/shared/info/1356589749) <span class="copy-block" onclick="copyText(this)">    <code>1356589749</code>    <span class="copy-feedback">Copié ✅</span></span>
+
+- Mode anti-distraction / focus qui verrouille Anki en plein écran ou bloque les applications tierces distrayantes jusqu'à l'atteinte de votre objectif de révision.
 
 #### [Card Info During Review](https://ankiweb.net/shared/info/2179286493) <span class="copy-block" onclick="copyText(this)">    <code>2179286493</code>    <span class="copy-feedback">Copié ✅</span></span>
 
@@ -73,12 +85,13 @@ Pour savoir comment installer un add-on, référez-vous au [tuto d'installation]
 
 - Organise et colorise vos tags de manière hiérarchique. Permet de voir les cartes suspendues en mode <span class="notes-anki-button">note</span>.
 
-#### [Opening the same window multiple time](https://ankiweb.net/shared/info/354407385) <span class="copy-block" onclick="copyText(this)">    <code>354407385</code>    <span class="copy-feedback">Copié ✅</span></span>
-- Permet d'ouvrir plusieurs fois l'explorateur.
-
 #### [Pass/Fail](https://ankiweb.net/shared/info/876946123) <span class="copy-block" onclick="copyText(this)">    <code>876946123</code>    <span class="copy-feedback">Copié ✅</span></span>
 
 - Simplifie l'interface de révision en ne gardant que deux boutons (Échec / Réussite), ce qui permet de réviser plus rapidement tout en restant parfaitement compatible avec l'algorithme FSRS.
+
+#### [Audiovisual Feedback](https://ankiweb.net/shared/info/231569866) <span class="copy-block" onclick="copyText(this)">    <code>231569866</code>    <span class="copy-feedback">Copié ✅</span></span>
+
+- Ajoute des retours visuels et sonores lors des réponses pour dynamiser vos sessions de révision.
 
 <h4>
   <a href="https://ankiweb.net/shared/info/1010827105">Auto Reveal</a> — Pour garder le rythme
@@ -155,7 +168,7 @@ Cet add‑on permet de ne pas "zone out" sur une carte.
   - Hémato — Hémostase :
     - [Vidéo 1 — Hémostase primaire](https://www.youtube.com/watch?v=4VhsNuK0OgY)
     - [Vidéo 2 — Coagulation](https://www.youtube.com/watch?v=SGzp9wqeu84)
-  - [ECG Lyon](https://www.youtube.com/results?search_query=ECG+Lyon)
+  - [ECG Lyon](https://www.ecg-lyon.com/)
 
 
 - Images cliniques et entraînement

@@ -1,12 +1,12 @@
 # Anki EDN
 Anki EDN est un projet qui se base sur le travail et la méthodologie de [Léo Picat](https://picat.fr) (interne en MAR à Paris depuis 2024). Nous voulons rendre son paquet de flashcards collaboratif et communautaire pour le faire perdurer. *L'installation particulière sera expliquée au fil de ce tuto*.
 
-✅ Il faut compter **15 minutes** de lecture avant de pouvoir utiliser les cartes Anki de ce **paquet (presque) exhaustif** qui vous mèneront aux EDN. 
+Il faut compter **15 minutes** de lecture avant de pouvoir utiliser les cartes Anki de ce **paquet (presque) exhaustif** qui vous mèneront aux EDN. 
 <div class="carousel-container">
 <button class="carousel-btn carousel-prev">❮</button>
 <figure class="carousel-slide active">
 <img src="./images/tags_ilu.png" alt="Exemple de Tags"/>
-<figcaption>⚠️ Il faut lire et comprendre les items avant de les apprendre</figcaption>
+<figcaption>Attention : Il faut lire et comprendre les items avant de les apprendre</figcaption>
 </figure>
 <figure class="carousel-slide">
 <img src="./images/paquet-edn-exemple-cartes-liees.png" alt="Cartes liées"/>
@@ -27,12 +27,12 @@ Anki EDN est un projet qui se base sur le travail et la méthodologie de [Léo P
 <button class="carousel-btn carousel-next">❯</button>
 </div>
 
-📱 Pour travailler sur tablette ou téléphone, utilisez les applications **AnkiDroid** / **AnkiMobile** ou **AnkiWeb**. 
+Pour travailler sur tablette ou téléphone, utilisez les applications **AnkiDroid** / **AnkiMobile** ou **AnkiWeb**. 
 > Le support le plus complet reste Anki sur ordinateur, peu importe le système d'exploitation.
 
 Ce paquet se distingue par la brièveté des cartes et par un système de mise en contexte des cartes. Tout cela rend favorable la rétention des informations à très long terme. 
 
-## 📊 Le deck en chiffres
+## Le deck en chiffres
 
 <div class="stats-grid">
   <div class="stat-card">
@@ -49,7 +49,7 @@ Ce paquet se distingue par la brièveté des cartes et par un système de mise e
   </div>
 </div>
 
-## 🚀 On pousse Anki à ses limites
+## On pousse Anki à ses limites
 
 La plupart des gens utilisent Anki à **5 % de son potentiel** : des cartes basiques, un algorithme par défaut, et c'est tout.
 

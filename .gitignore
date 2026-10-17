@@ -2,3 +2,4 @@ book
 serve
 build_test
 *.bak
+.vscode/

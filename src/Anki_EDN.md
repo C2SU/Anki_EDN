@@ -16,7 +16,7 @@ Il faut compter **10 minutes** de lecture avant de pouvoir utiliser les cartes A
 <button class="carousel-btn carousel-prev">❮</button>
 <figure class="carousel-slide active">
 <img src="./images/tags_ilu.png" alt="Exemple de Tags"/>
-<figcaption>⚠️ Il faut lire et comprendre les items avant de les apprendre</figcaption>
+<figcaption>Important : Il faut lire et comprendre les items avant de les apprendre</figcaption>
 </figure>
 <figure class="carousel-slide">
 <img src="./images/paquet-edn-exemple-cartes-liees.png" alt="Cartes liées"/>
@@ -37,7 +37,7 @@ Il faut compter **10 minutes** de lecture avant de pouvoir utiliser les cartes A
 <button class="carousel-btn carousel-next">❯</button>
 </div>
 
-📱 Pour travailler sur tablette ou téléphone, utilisez les applications **AnkiDroid** / **AnkiMobile** ou **AnkiWeb**. 
+Pour travailler sur tablette ou téléphone, utilisez les applications **AnkiDroid** / **AnkiMobile** ou **AnkiWeb**. 
 > Le support le plus complet reste Anki sur ordinateur, peu importe le système d'exploitation.
 
 Ce paquet se distingue par la brièveté des cartes et par un système de mise en contexte des cartes. Tout cela rend favorable la rétention des informations à très long terme. Rejoignez [Notre Discord](https://discord.gg/2A7zHAEBYt) pour recevoir de l'aide et contribuer au projet.
@@ -47,60 +47,78 @@ Ce paquet se distingue par la brièveté des cartes et par un système de mise e
 - Ensuite [ce drive vous sera utile](https://drive.google.com/drive/u/0/folders/1M9hg4EMRoFRQ4wh_E2xIOu_bKmg7ze59).
 
 ## Première installation : Anki, AnkiCollab (téléchargement du deck) et add‑ons
-> **Utilisez un ordinateur** 💻📵
+> **Utilisez un ordinateur** (la configuration initiale et les add-ons nécessitent la version PC/Mac)
 
-### 1. Anki <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
+### 1. Anki <span class="gif-wrapper" data-video="videos/installation-anki.mp4" data-video-fallback="videos/installation-anki.mp4"></span>
 
 - [Créez un compte AnkiWeb](https://ankiweb.net/account/signup) ;
 - Acceptez "Terms and Conditions" et vérifiez votre mail.
 - [Installez Anki sur votre ordinateur](https://apps.ankiweb.net/#downloads) ;
 - Une fois sur l'application, appuyez sur <span class="tab-button active">synchronisation</span> ou sur la touche <kbd>Y</kbd> puis connectez‑vous à votre compte AnkiWeb ;
-- Allez dans `Outil > Greffons > Acquérir des greffons` ou <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>A</kbd> et collez 
+- Allez dans `Outils > Greffons > Acquérir des greffons` ou faites <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>A</kbd> et collez :
 <span class="copy-block" onclick="copyText(this)">
   <code>1957538407 501542723 1052724801 445658251 2135076010 303415230 1906641654 2040501954</code>
-  <span class="copy-feedback"> Copié ✅</span>
+  <span class="copy-feedback">Copié</span>
 </span> On a installé ça[^1].
 
-### 2. AnkiCollab et téléchargement du deck <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
+### 2. AnkiCollab et téléchargement du deck <span class="gif-wrapper" data-video="videos/ankicollab-telechargement.mp4" data-video-fallback="videos/ankicollab-telechargement.mp4"></span>
 
-- [Créez un compte AnkiCollab](https://www.ankicollab.com/signup);
-- Relancez Anki, allez dans `AnkiCollab > Login` puis `AnkiCollab > Edit Subscriptions` et collez <span class="copy-block" onclick="copyText(this)">
+- [Créez un compte AnkiCollab](https://www.ankicollab.com/signup) ;
+- Relancez Anki, connectez-vous dans `AnkiCollab > Login` ;
+- Allez dans `AnkiCollab > Manage Subscriptions` (ou `AnkiCollab > Settings`) :
+<figure style="width: 500px;">
+  <img src="./images/ankicollab_manage_subscriptions.png" alt="AnkiCollab - Manage Subscriptions"/>
+</figure>
+- Dans le champ « Share code: », collez le code de partage puis cliquez sur **Submit** :
+<span class="copy-block" onclick="copyText(this)">
   <code>mango-may-georgia-eleven-moon-orange</code>
-  <span class="copy-feedback">Copié ✅</span>
+  <span class="copy-feedback">Copié</span>
 </span>
-- Toujours dans `AnkiCollab > Edit Subscriptions`, allez dans `🛠️ Global Settings` et activez `Check for Updates on Startup` et `Automatically suspend new Cards` ;
-- Vous avez téléchargé le deck Anki EDN !
-### 3. Faire fonctionner Lien entre les cartes (réparation des NID) <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
+- Cliquez ensuite sur le bouton **Global Settings** en bas de la fenêtre :
+<figure style="width: 500px;">
+  <img src="./images/ankicollab_global_settings.png" alt="AnkiCollab - Global Settings"/>
+</figure>
+- Cochez les options recommandées :
+  - **Update Decks on startup** : pour recevoir automatiquement les mises à jour au lancement d'Anki ;
+  - **Automatically suspend new Cards** : pour que les nouvelles cartes soient automatiquement suspendues et ne s'ajoutent pas brutalement à vos révisions quotidiennes ;
+  - **Auto-sync on Anki startup and close** et **Synchronize media files when updating decks** ;
+- Cliquez sur **Save** : le paquet Anki EDN est maintenant téléchargé et configuré !
 
-1. Dans le menu principal d'Anki, cliquez sur **Anki EDN** ;
-2. Sélectionnez **⚠️ Réparer les NID** ;
-3. Cliquez sur **continuer**
-4. Attendez la fin de l'opération ; Relancez Anki et vos liens sont maintenant réparés !
+### 3. Faire fonctionner Lien entre les cartes (réparation des NID) <span class="gif-wrapper" data-video="videos/reparation-nid.mp4" data-video-fallback="videos/reparation-nid.mp4"></span>
 
-### 4. Les options de révision <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span> 
+L'add-on Anki EDN NID permet de faire correspondre les identifiants locaux de vos notes pour que la navigation interactive entre les cartes liées fonctionne instantanément.
+
+<figure style="width: 300px;">
+  <img src="./images/menu_anki_edn.png" alt="Menu Anki EDN"/>
+</figure>
+
+1. Dans la barre de menus en haut d'Anki, cliquez sur **Anki EDN** ;
+2. Sélectionnez **Réparer les NID** ;
+3. L'outil analyse la collection et synchronise les identifiants. Une notification confirme la fin de l'opération ;
+4. Vos liens sont maintenant opérationnels sans redémarrage nécessaire.
+
+### 4. Les options de révision <span class="gif-wrapper" data-video="videos/options-revision.mp4" data-video-fallback="videos/options-revision.mp4"></span> 
 
 Nous les optimisons de façon à ce que l'utilisation du paquet ne soit pas trop chronophage. 
-- Sur la page d'accueil, rendez‑vous à droite du paquet dans `⚙️ > options` ;
+- Sur la page d'accueil, rendez‑vous à droite du paquet dans les options (icône d'engrenage à droite du nom du paquet) ;
 - En haut, à droite de <span class="sauvegarde-anki-button">Sauvegarder</span> cliquez sur `Ajouter un préréglage` et entrez un nom.
 
 #### Paramètres recommandés :
-> Astuce : toutes les modifications effectuées sont matérialisées par le signe 🔄
+> Astuce : toutes les modifications effectuées par rapport aux réglages par défaut sont signalées.
 
 <figure>
-    <figcaption>⚠️ Il faut faire comme sur cette image</figcaption>
-    <img src="./images/options.png" alt="Média en cours de création..." class="img-sm"/>
+    <figcaption>Paramètres recommandés pour Anki EDN</figcaption>
+    <img src="./images/options.png" alt="Options Anki EDN" class="img-sm"/>
 </figure>
 
-- Nombre maximum de nouvelles cartes par jour : 50 (c'est bien le maximum, il vaut mieux s'arrêter autour de 25–40 [^30-40]) ;
-- Aucune limite sur le nombre de révisions quotidiennes ;
-- On préfère laisser les étapes d'origine. Pour optimiser ces réglages à votre mémoire, [lisez cette page](./Bonus.md) ;
-- L'ordre d'affichage est réglé pour maximiser l'attention et gagner du temps ;
-- Seuil de pénibilité à 20 (les cartes échouées plus de 19 fois sont suspendues et retournent ainsi dans la réserve des cartes) ;
-- Le taux de rétention du FSRS est calculé pour un apprentissage sur plusieurs années. Il est plutôt bas afin de ne pas rendre les révisions trop chronophages. Il conviendra de l'augmenter à partir de l'été D3 (et non pas pour les partiels, où vous privilégierez les QCM et les DP). Les `Paramètres du FSRS` s'adaptent automatiquement, pas besoin d'y toucher ;
-- Les "Cartes sœurs" n'apparaissent pas le même jour pour favoriser la mémoire à long terme ;
-- Le reste des réglages est identique à ceux par défaut. 
+- **Nombre maximum de nouvelles cartes par jour** : 50 (c'est le maximum conseillé, il vaut mieux viser 25–40 [^30-40]) ;
+- **Nombre maximal de révisions par jour** : illimité (ou 500+) pour ne jamais accumuler de dette cachée ;
+- **FSRS** : activé nativement dans Anki (FSRS-6 avec 21 paramètres). Le taux de rétention souhaité recommandé est de **88 % (0.88)** afin de préserver votre temps de travail sur le long cours. 
+- **Enfouir les cartes sœurs (Bury Siblings)** : activé pour les nouvelles cartes et les révisions, afin de ne pas voir deux faces ou variantes d'une même note le même jour ;
+- **Seuil de pénibilité** : fixé à 20 (les cartes échouées 20 fois sont suspendues pour ne pas monopoliser vos séances) ;
+- **Avance automatique** : disponible nativement dans les options pour cadencer vos sessions sans manipulation superflue.
 
-> Lors de la première révision, les espacements entre les révisions sont très grands et peuvent surprendre. Dès votre 3e jour de révisions, dans `FSRS` cliquez sur `Optimiser`. Répétez l'opération toutes les 2 semaines puis tous les mois ! (Créez un rappel)  
+> Lors de la première révision, les espacements entre les révisions sont plus longs qu'avec l'ancien algorithme SM-2, ce qui est normal. Dès votre premier mois de révisions, dans la section `FSRS` des options, cliquez sur `Optimiser`. Répétez l'opération tous les mois !  
 Pour en savoir plus sur les paramètres, [référez‑vous à cette vidéo](https://www.youtube.com/watch?v=uo-qQvOZDfg).
 
 ## Premier pas avec Anki EDN
@@ -108,13 +126,13 @@ Pour en savoir plus sur les paramètres, [référez‑vous à cette vidéo](http
 Une fois que vous avez installé le paquet, il y a 2 choses à faire en priorité :
 
 1. Jetez un œil à quelques items pour voir si le paquet peut vous convenir :
-   - Depuis la page d'accueil d'Anki, allez dans l'explorateur de cartes (cliquez sur <span class="tab-button active">Parcourir</span> ou appuyez sur <kbd class="kbd-keyboard">B</kbd>), puis rendez‑vous dans le volet de navigation (à gauche de la page), descendez jusqu'à `Étiquettes` et sous <code>EDN</code> déroulez les étiquettes par items pour juger notre forme de rédaction ([Expliquée ici](#les-normes-du-paquet)). Vous pouvez utiliser `Aperçu` (en haut à droite) pour visualiser les cartes. <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span> 
+   - Depuis la page d'accueil d'Anki, allez dans l'explorateur de cartes (cliquez sur <span class="tab-button active">Parcourir</span> ou appuyez sur <kbd class="kbd-keyboard">B</kbd>), puis rendez‑vous dans le volet de navigation (à gauche de la page), descendez jusqu'à `Étiquettes` et sous <code>EDN</code> déroulez les étiquettes par items pour juger notre forme de rédaction ([Expliquée ici](#les-normes-du-paquet)). Vous pouvez utiliser `Aperçu` (en haut à droite) pour visualiser les cartes. <span class="gif-wrapper" data-video="videos/premier-pas-apercu.mp4" data-video-fallback="videos/premier-pas-apercu.mp4"></span> 
 
 <figure>
     <img src="./images/paquet-edn-exemple-exploration-paquet.png" alt="Média en cours de création..." class="img-lg"/>
 </figure>
 
-2. **Exclure toutes les cartes des révisions (on reviendra là‑dessus)**    <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>     
+2. **Exclure toutes les cartes des révisions (on reviendra là‑dessus)**    <span class="gif-wrapper" data-video="videos/premier-pas-suspendre.mp4" data-video-fallback="videos/premier-pas-suspendre.mp4"></span>     
     - Assurez‑vous que l'explorateur est en mode <span class="cartes-anki-button">Cartes</span> et pas en mode <span class="notes-anki-button">Notes</span> (en haut et à gauche de la barre de recherche) ;
     - Dans le même volet de navigation (à gauche de l'explorateur), dans `Étiquettes` cliquez sur <code>EDN</code> ;
     - Sélectionnez toutes les cartes via <kbd>Ctrl</kbd>+<kbd>A</kbd> ou <kbd>Cmd</kbd>+<kbd>A</kbd> ;
@@ -125,10 +143,10 @@ Une fois que vous avez installé le paquet, il y a 2 choses à faire en priorit�
 > Avant de commencer à réviser les fiches Anki, il faut avoir une bonne compréhension du cours.  
 Sinon, vous serez déroutés par l'ordre aléatoire des cartes.
 
-1. Rendez‑vous dans l'explorateur où vous irez chercher l'étiquette de l'item que vous voulez réviser  <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span> 
+1. Rendez‑vous dans l'explorateur où vous irez chercher l'étiquette de l'item que vous voulez réviser
     - Allez dans l'explorateur de cartes (cliquez sur <span class="tab-button active">Parcourir</span> ou appuyez sur <kbd class="kbd-keyboard">B</kbd>), puis rendez‑vous dans le volet de navigation (à gauche), descendez jusqu'à `Étiquettes` et sous <code>EDN</code> déroulez les items puis cliquez sur celui qui vous intéresse. Vous pouvez alors prendre connaissance des cartes déjà créées avec `Aperçu` (en haut à droite). 
     
-2. Désuspendre les cartes que vous souhaitez apprendre  <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span> 
+2. Désuspendre les cartes que vous souhaitez apprendre  <span class="gif-wrapper" data-video="videos/premier-pas-desuspendre.mp4" data-video-fallback="videos/premier-pas-desuspendre.mp4"></span> 
     - Sélectionnez les cartes qui vous intéressent puis <kbd>Ctrl</kbd>+<kbd>J</kbd> / <kbd>Cmd</kbd>+<kbd>J</kbd> ou via un clic droit > `Suspendre/Reprendre`.
 
 ---
@@ -214,23 +232,23 @@ L'utilisation des symboles permet d'alléger le contenu des cartes et de ne pas 
 ---
 
 ## Organisation du Deck
-### Les étiquettes 🏷️
+### Les étiquettes
 
 Les cartes sont classées via des étiquettes :
 
 - des étiquettes par items, parfois avec des sous‑tags ;
 - des étiquettes par matière ;
-- des étiquettes par rang ;
-- et un certain nombre d'étiquettes pour faciliter les recherches (`Antibiothérapie`, `Formule`, `Norme`, `Seuil`, `Nom-propre`, entre autres).
+- des étiquettes par rang (`Rang::A`, `Rang::B`) ;
+- et un certain nombre d'étiquettes thématiques pour faciliter les recherches (`Antibiothérapie`, `Formule`, `Norme`, `Seuil`, `Nom-propre`, entre autres).
 
 <figure>
-    <img src="./images/tags_ilu.png" alt="Média en cours de création..."/>
+    <img src="./images/tags_ilu.png" alt="Organisation des étiquettes"/>
 </figure>
 
-### Les drapeaux 🏴
+### Les drapeaux
 > C'est à vous de les placer afin d'optimiser vos révisions
 
-Pour marquer vos cartes durant vos révisions, allez dans `Autres choix` > `Marqueur de carte` ou simplement <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> ou <kbd>4</kbd>.
+Pour marquer vos cartes durant vos révisions, allez dans `Autres choix > Marqueur de carte` ou utilisez simplement les raccourcis <kbd>Ctrl</kbd>+<kbd>1</kbd> à <kbd>7</kbd> (ou directement <kbd>1</kbd> à <kbd>7</kbd> selon votre configuration).
 
 Voici comment peuvent s'utiliser les drapeaux :
 
@@ -261,7 +279,7 @@ Nous **utilisons donc des étiquettes pour classer vos cartes** et le paquet ser
 </figure>
 
 #### Autres
-- **FSRS** : Optimisez-le une fois par mois (`⚙️ > options > FSRS > Optimiser`). <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span> 
+- **FSRS** : Optimisez-le une fois par mois (dans les options du paquet > `FSRS > Optimiser`). <span class="gif-wrapper" data-video="videos/options-revision.mp4" data-video-fallback="videos/options-revision.mp4"></span> 
 - Faites vos révisions journalières d'une traite si possible.
 
 ---
@@ -281,7 +299,7 @@ Ce paquet est collaboratif et nous avons besoin de vous pour l'actualiser.
 
 #### Après une mise à jour
 - Des tags sont généralement créés pour que vous repériez les cartes mises à jour.
-- Si la MAJ concerne un item que vous révisez, nous vous conseillons **d'oublier les cartes modifiées que vous aviez apprises**, puis de les réapprendre <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
+- Si la MAJ concerne un item que vous révisez, nous vous conseillons **d'oublier les cartes modifiées que vous aviez apprises**, puis de les réapprendre <span class="gif-wrapper" data-video="videos/maj-oublier-cartes.mp4" data-video-fallback="videos/maj-oublier-cartes.mp4"></span>
     - Allez dans l'explorateur de cartes (cliquez sur <span class="tab-button active">Parcourir</span> ou appuyez sur <kbd class="kbd-keyboard">B</kbd>), puis rendez-vous dans la barre de recherche en haut et au milieu. Tapez <code>tag:</code>. Une autre barre de recherche s'ouvre.
     - Dans cette nouvelle barre de recherche, tapez <code>MAJ</code>.
     - Sélectionnez les cartes qui vous intéressent, puis appuyez sur <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd> | <kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>N</kbd> ou utilisez le clic droit > `Oublier...`.
@@ -292,7 +310,7 @@ Ce paquet est collaboratif et nous avons besoin de vous pour l'actualiser.
 #### Après un ajout
 - [Les nouvelles cartes sont automatiquement suspendues ;](#2-ankicollab-et-téléchargement-du-deck)
 - Les notifications décrivent quels items ont reçu des nouveautés :
-    - À vous de désuspendre les cartes <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
+    - À vous de désuspendre les cartes <span class="gif-wrapper" data-video="videos/ajout-desuspendre.mp4" data-video-fallback="videos/ajout-desuspendre.mp4"></span>
     - Allez dans l'explorateur de cartes (cliquez sur <span class="tab-button active">Parcourir</span> ou appuyez sur <kbd class="kbd-keyboard">B</kbd>), puis rendez-vous dans la barre de recherche en haut et au milieu. Tapez <code>tag:</code>. Une autre barre de recherche s'ouvre.
     - Dans cette nouvelle barre de recherche, tapez <code>NEW</code>.
     - Sélectionnez les cartes qui vous intéressent, puis appuyez sur <kbd>Ctrl</kbd>+<kbd>J</kbd> / <kbd>Cmd</kbd>+<kbd>J</kbd> ou utilisez le clic droit > `Suspendre/Reprendre`.
@@ -361,7 +379,7 @@ Format attendu :
 2 Analyse détaillée des cartes modifiées
 3 Proposition des nouvelles cartes au format Anki (HTML lisible) avec leurs tags appropriés
 4 Signalement des cartes redondantes, sans correspondance ou hors référentiel</code>
-  <span class="copy-feedback">Copié ✅</span>
+  <span class="copy-feedback">Copié</span>
 </span>
 
 - Faites les modifications à l'aide des entrées HTML des cartes `<>` (<kbd>Cmd</kbd>+<kbd>Tab</kbd>+<kbd>X</kbd> | <kbd>Ctrl</kbd>+<kbd>Tab</kbd>+<kbd>X</kbd>)
@@ -369,14 +387,14 @@ Format attendu :
     <img src="./images/illu_htlm_modifier.png" alt="Média en cours de création..."/>
 </figure>
 
-- Toutes les cartes validés doivent actualiser le tag source (par exemple : `source::2024::ORL`).
+- Toutes les cartes validées doivent actualiser le tag source (par exemple : `source::2026::ORL`).
 
 #### Pour créer des liens entre les cartes <span class="gif-wrapper" data-video="images/clickable-note-links-demo.webm" data-video-fallback="images/clickable-note-links-demo.mp4"  data-caption="Vidéo de Léo Picat"></span>
 - Sélectionnez la note à lier dans l'explorateur ;
 - Copiez son identifiant (NID) via `Clic droit > Copy Note ID` ou <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>C</kbd> ;
 - Dans la note de destination, après avoir collé le NID, sélectionnez-le ou cliquez sur le bouton <span class="tab-button active">Lier</span> ou appuyez sur <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd> ;
 - Le lien est créé !
-> Plus simple : Dans le champ de la note de destination, cliquez sur le bouton <span class="tab-button active">Lier</span> ou appuyez sur <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd>, cherchez le recto de la carte à lier et insérez la.
+> Plus simple : Dans le champ de la note de destination, cliquez sur le bouton <span class="tab-button active">Lier</span> ou appuyez sur <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>L</kbd>, cherchez le recto de la carte à lier et insérez-la.
 
 Lorsque vous révisez, passez la souris sur le lien pour afficher un aperçu de la carte liée sans quitter votre révision. Vous pouvez aussi utiliser les raccourcis <kbd>P</kbd>, <kbd>R</kbd> et <kbd>N</kbd> pour naviguer entre les cartes liées.
 Vous pouvez cliquer pour éditer la carte aperçu.
@@ -385,30 +403,38 @@ Vous pouvez cliquer pour éditer la carte aperçu.
 
 > Que vos ajouts, suppressions ou modifications soient acceptés par la communauté ou non, cela n'impactera pas votre paquet. Vous conserverez vos modifications.
 
-#### Soumettre des nouvelles cartes
-- Écrivez vos nouvelles cartes dans le menu principal <span class="tab-button active">Ajouter</span>.
-- Dans `Type` sélectionnez le [format qui convient](#types-de-notes) suivi de `-EDN-Picat-x`.
-- Dans `Paquet` sélectionnez `Anki EDN`.
-- Remplissez les champs.
-
-##### S'il s'agit d'une seule carte <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
-- Toujours dans l'onglet d'édition de la note, sélectionnez `AnkiCollab` > `New card` et laissez un message explicatif contenant l'item en question.
-
-##### S'il s'agit d'un groupe de cartes <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
-- Dans l'explorateur, sélectionnez les notes que vous voulez proposer, puis clic droit > `AnkiCollab: Bulk suggest notes` > `New Card` et laissez un message explicatif contenant l'item en question.
-
-#### Proposer des modifications
-- Modifiez les champs des notes d'intérêt.
+#### Soumettre de nouvelles cartes
+- Écrivez vos nouvelles cartes dans la fenêtre principale <span class="tab-button active">Ajouter</span> (<kbd>A</kbd>).
+- Dans `Type`, sélectionnez le [format qui convient](#types-de-notes) suivi de `-EDN-Picat-x`.
+- Dans `Paquet`, sélectionnez `Anki EDN`.
+- Renseignez les champs requis et les tags.
 
 ##### S'il s'agit d'une seule carte
-- Toujours dans l'onglet d'édition de la note, sélectionnez `AnkiCollab` > `Updated content` (ou autre) et laissez un message explicatif.
+- Dans la fenêtre d'ajout (<span class="tab-button active">Ajouter</span>), cochez la case **Suggest on AnkiCollab** (située à gauche du bouton d'ajout). Lors de la validation, un dialogue s'ouvre pour renseigner un message explicatif et le numéro d'item concerné.
 
-##### S'il s'agit d'un groupe de cartes
-- Dans l'explorateur, sélectionnez les notes que vous voulez proposer, puis clic droit > `AnkiCollab: Bulk suggest notes` > `Bulk Suggestion` (ou autre) et laissez un message explicatif.
+##### S'il s'agit d'un groupe de cartes <span class="gif-wrapper" data-video="videos/ankicollab-soumettre-groupe.mp4" data-video-fallback="videos/ankicollab-soumettre-groupe.mp4"></span>
+- Dans l'explorateur (<span class="tab-button active">Parcourir</span>), sélectionnez les notes concernées, faites un clic droit puis sélectionnez **AnkiCollab: Bulk suggest notes** :
+<figure style="width: 450px;">
+    <img src="./images/illu_suggestion_multiple.png" alt="AnkiCollab: Bulk suggest notes"/>
+</figure>
+- Renseignez un message explicatif détaillant les items ou notions concernées.
 
-#### Supprimer des cartes <span class="gif-wrapper" data-video="videos/test.webm" data-video-fallback="videos/test.mp4"></span>
-On peut vouloir supprimer des cartes parce qu'elles ne sont plus utiles, trop anecdotiques, ou inadaptées.
-- Dans l'explorateur, sélectionnez les notes que vous voulez proposer, puis clic droit > `AnkiCollab: Request note removal` > `Note Removal` (ou autre) et motivez la raison.
+#### Proposer des modifications
+- Modifiez le contenu ou les tags des notes d'intérêt dans l'éditeur.
+
+##### S'il s'agit d'une seule carte <span class="gif-wrapper" data-video="videos/ankicollab-soumettre-seule.mp4" data-video-fallback="videos/ankicollab-soumettre-seule.mp4"></span>
+- Dans l'éditeur de note (en bas de la fenêtre, à côté du champ des étiquettes), cliquez directement sur le bouton **AC: Suggest changes**. Renseignez la motivation de votre correction pour les modérateurs.
+
+##### S'il s'agit d'un groupe de cartes <span class="gif-wrapper" data-video="videos/ankicollab-soumettre-groupe.mp4" data-video-fallback="videos/ankicollab-soumettre-groupe.mp4"></span>
+- Dans l'explorateur, sélectionnez les notes modifiées, faites un clic droit puis choisissez **AnkiCollab: Bulk suggest notes** et motivez les changements effectués.
+
+#### Supprimer des cartes <span class="gif-wrapper" data-video="videos/ankicollab-supprimer.mp4" data-video-fallback="videos/ankicollab-supprimer.mp4"></span>
+On peut proposer la suppression de cartes si elles sont devenues obsolètes, hors programme ou en doublon.
+- Dans l'explorateur (<span class="tab-button active">Parcourir</span>), sélectionnez les notes concernées, faites un clic droit puis choisissez **AnkiCollab: Request note removal** :
+<figure style="width: 450px;">
+    <img src="./images/illu_supprimer.png" alt="AnkiCollab: Request note removal"/>
+</figure>
+- Précisez le motif précis de la demande de retrait.
 
 ---
 
@@ -579,7 +605,7 @@ Un compte AnkiCollab suffit pour un usage sur un poste unique. En revanche, un c
 
 #### Mes notifications de mise à jour n'apparaissent pas au démarrage
 1. Vérifiez votre connexion dans `AnkiCollab > Login`.
-2. Dans `AnkiCollab > Edit Subscriptions > Global Settings`, assurez-vous que l'option *Check for Updates on Startup* est bien cochée.
+2. Dans `AnkiCollab > Manage Subscriptions > Global Settings` (ou `AnkiCollab > Settings`), assurez-vous que l'option **Update Decks on startup** est bien cochée.
 
 #### Comment vérifier si une mise à jour d'un item a bien été appliquée sur mon deck ?
 - Pour visualiser les cartes mises à jour durant un mois précis, cherchez `tag:MAJ::MM/YY` dans l'explorateur (par exemple `tag:MAJ::11/25`).
@@ -602,10 +628,10 @@ Si une carte modifiée localement reçoit une mise à jour officielle, son conte
 Ces cartes ont été retirées du deck officiel (obsolescence, doublon ou hors programme). AnkiCollab vous laisse le choix de les supprimer localement ou de les conserver.
 
 #### Pourquoi mes images ne s'affichent pas (icône d'image cassée) ?
-Cliquez sur la roue crantée située à droite du deck "Anki EDN" sur l'écran d'accueil, puis sélectionnez **Anki Collab Check Media** (et non la commande classique d'Anki).
+Dans le menu en haut, allez dans **AnkiCollab > Check Media** (ou cliquez sur la roue crantée à droite du paquet "Anki EDN" puis sélectionnez **Anki Collab Check Media**).
 
 #### Que faire si les liens entre les cartes renvoient vers une recherche vide ?
-1. **Réparation des identifiants** : sur l'écran d'accueil, cliquez sur **Anki EDN** puis sélectionnez **Réparer les NID**. Suivez les instructions et relancez Anki.
+1. **Réparation des identifiants** : dans la barre de menus en haut d'Anki, cliquez sur **Anki EDN** puis sélectionnez **Réparer les NID**.
 2. **Divergence de profil** : si le problème persiste après réinstallation, consultez les étapes de synchronisation propre dans [Première installation](#3-faire-fonctionner-lien-entre-les-cartes-réparation-des-nid).
 3. **Liens non encore créés** : certaines cartes cibles n'ont pas encore été rédigées. Vous pouvez leur attribuer l'étiquette `empty-nid` pour les répertorier.
 

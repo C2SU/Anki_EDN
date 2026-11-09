@@ -112,22 +112,36 @@ document.querySelectorAll(".gif-wrapper").forEach(wrapper => {
   video.classList.add("video-anim");
 
   // Sources vidéo
+  const root = (typeof path_to_root !== "undefined") ? path_to_root : "";
+  const resolveUrl = (url) => {
+    if (!url) return "";
+    if (url.startsWith("http://") || url.startsWith("https://") || url.startsWith("/")) return url;
+    return root + url;
+  };
+
+  let lastSource = null;
   if (videoUrl) {
     const sourceMain = document.createElement("source");
-    sourceMain.src = videoUrl;
+    sourceMain.src = resolveUrl(videoUrl);
     sourceMain.type = videoUrl.endsWith(".mp4") ? "video/mp4" : "video/webm";
     video.appendChild(sourceMain);
+    lastSource = sourceMain;
   }
   if (fallbackUrl) {
     const sourceFallback = document.createElement("source");
-    sourceFallback.src = fallbackUrl;
+    sourceFallback.src = resolveUrl(fallbackUrl);
     sourceFallback.type = fallbackUrl.endsWith(".mp4") ? "video/mp4" : "video/webm";
     video.appendChild(sourceFallback);
+    lastSource = sourceFallback;
   }
 
-  video.onerror = () => {
+  const handleMediaError = () => {
     figure.innerHTML = `<div class="media-fallback">Média en cours de création...</div>`;
   };
+  video.onerror = handleMediaError;
+  if (lastSource) {
+    lastSource.onerror = handleMediaError;
+  }
 
   figure.appendChild(video);
 

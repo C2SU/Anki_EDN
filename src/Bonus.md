@@ -18,31 +18,35 @@ Pour savoir comment installer un add-on, référez-vous au [tuto d'installation]
 
 - C'est un classement des utilisateurs du deck, pour se motiver mutuellement.
 - Ouvrez le menu `Leaderboard > Configuration` ou faites <kbd>Alt</kbd>+<kbd>C</kbd> ;
-<figure style="width: 300px;">
-    <img src="./images/leaderboard_config.png" alt="Menu Leaderboard Configuration"/>
-</figure>
+
+  <figure style="width: 300px;">
+      <img src="./images/leaderboard_config.png" alt="Menu Leaderboard Configuration"/>
+  </figure>
 - Créez votre compte dans l'onglet `Compte` (ou `Account`) ;
 - **Rejoindre le groupe :**
     - Allez dans l'onglet `Groupes` (ou `Groups`) ;
     - Cherchez et rejoignez le groupe **Anki EDN**. 
-    <figure style="width: 500px;">
-        <img src="./images/groupes.png" alt="Rejoindre le groupe Anki EDN"/>
-    </figure>
+
+      <figure style="width: 500px;">
+          <img src="./images/groupes.png" alt="Rejoindre le groupe Anki EDN"/>
+      </figure>
 - **Afficher le groupe :**
     - Allez dans l'onglet `Paramètres` (ou `Config`) ;
     - Dans le menu déroulant « Classement par défaut : », sélectionnez **Group** pour qu'il s'affiche par défaut à l'ouverture du classement.
-    <figure style="width: 500px;">
-        <img src="./images/group.png" alt="Sélection du groupe par défaut"/>
-    </figure>
+      <figure style="width: 500px;">
+          <img src="./images/group.png" alt="Sélection du groupe par défaut"/>
+      </figure>
+
 #### Pour optimiser ses réglages : [FSRS helper](https://ankiweb.net/shared/info/759844606) et [Search Stats Extended](https://ankiweb.net/shared/info/1613056169) <span class="copy-block" onclick="copyText(this)">    <code>759844606 1613056169</code><span class="copy-feedback">Copié</span></span> <span class="gif-wrapper" data-video="videos/bonus-fsrs-helper.mp4" data-video-fallback="videos/bonus-fsrs-helper.mp4"></span>
 
 - Addons extrêmement complets, dont nous vous invitons à lire la documentation pour voir ce qu'ils proposent. Ici nous vous expliquerons juste comment optimiser les intervalles de mémoire courte. 
 - Après avoir utilisé le deck pendant au moins quelques jours :
     - Faites le raccourci <kbd class="kbd-keyboard">Shift</kbd> + <kbd class="kbd-keyboard">T</kbd> ;
     - Descendez jusqu'à ce tableau et entrez votre rétention souhaitée ; il générera les étapes recommandées que vous modifierez dans vos options.
-    <figure>
-    <img src="./images/opti_etapes.png" alt="Optimisation FSRS"/>
-    </figure>
+
+      <figure>
+      <img src="./images/opti_etapes.png" alt="Optimisation FSRS"/>
+      </figure>
 <h4>
   <a href="https://ankiweb.net/shared/info/724035414">AJT Mortician</a> 
   <span class="copy-block" onclick="copyText(this)"><code>724035414</code><span class="copy-feedback">Copié</span></span>
@@ -50,9 +54,10 @@ Pour savoir comment installer un add-on, référez-vous au [tuto d'installation]
 </h4>
 
 - Enterre automatiquement les cartes difficiles pour les revoir le lendemain. Configuration : `AJT > Mortician Options` ou <kbd>Alt</kbd>+<kbd>C</kbd>.
-<figure style="width: 400px;">
-    <img src="./images/mortican.png" alt="Configuration Mortician"/>
-</figure>
+
+  <figure style="width: 400px;">
+      <img src="./images/mortican.png" alt="Configuration Mortician"/>
+  </figure>
 
 #### [FLUX Heatmap & Gamification](https://ankiweb.net/shared/info/161867424) <span class="copy-block" onclick="copyText(this)">    <code>161867424</code>    <span class="copy-feedback">Copié</span></span>
 

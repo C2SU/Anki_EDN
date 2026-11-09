@@ -66,18 +66,24 @@ Ce paquet se distingue par la brièveté des cartes et par un système de mise e
 - [Créez un compte AnkiCollab](https://www.ankicollab.com/signup) ;
 - Relancez Anki, connectez-vous dans `AnkiCollab > Login` ;
 - Allez dans `AnkiCollab > Manage Subscriptions` (ou `AnkiCollab > Settings`) :
-<figure style="width: 500px;">
-  <img src="./images/ankicollab_manage_subscriptions.png" alt="AnkiCollab - Manage Subscriptions"/>
-</figure>
+
+  <figure style="width: 500px;">
+    <img src="./images/ankicollab_manage_subscriptions.png" alt="AnkiCollab - Manage Subscriptions"/>
+  </figure>
+
 - Dans le champ « Share code: », collez le code de partage puis cliquez sur **Submit** :
-<span class="copy-block" onclick="copyText(this)">
-  <code>mango-may-georgia-eleven-moon-orange</code>
-  <span class="copy-feedback">Copié</span>
-</span>
+
+  <span class="copy-block" onclick="copyText(this)">
+    <code>mango-may-georgia-eleven-moon-orange</code>
+    <span class="copy-feedback">Copié</span>
+  </span>
+
 - Cliquez ensuite sur le bouton **Global Settings** en bas de la fenêtre :
-<figure style="width: 500px;">
-  <img src="./images/ankicollab_global_settings.png" alt="AnkiCollab - Global Settings"/>
-</figure>
+
+  <figure style="width: 500px;">
+    <img src="./images/ankicollab_global_settings.png" alt="AnkiCollab - Global Settings"/>
+  </figure>
+
 - Cochez les options recommandées :
   - **Update Decks on startup** : pour recevoir automatiquement les mises à jour au lancement d'Anki ;
   - **Automatically suspend new Cards** : pour que les nouvelles cartes soient automatiquement suspendues et ne s'ajoutent pas brutalement à vos révisions quotidiennes ;
@@ -222,9 +228,11 @@ L'utilisation des symboles permet d'alléger le contenu des cartes et de ne pas 
   - Pour obtenir les icônes dans votre éditeur :
     - <a href="./assets/raccourcis.csv" download>Télécharger ce fichier</a>
     - Allez dans `Outils > Insert Symbol Options...`
-       <figure style="width: 300px;">
-         <img src="./images/illu_symbol_options.png" alt="Média en cours de création..."/>
+
+      <figure style="width: 300px;">
+        <img src="./images/illu_symbol_options.png" alt="Média en cours de création..."/>
       </figure>
+
     - Cliquez sur `Import` et sélectionnez le fichier téléchargé puis `Ok`.
     - Il suffit maintenant d'écrire les commandes directement dans le corps de votre texte pour qu'elles s'insèrent.
     - Les commandes sont visualisables sur [ce tableau](#les-abréviations-et-symboles).
@@ -338,9 +346,11 @@ Vous pouvez soumettre des modifications pour de multiples raisons, même pour de
     - Pour obtenir les icônes dans votre éditeur :
         - <a href="./assets/raccourcis.csv" download>Télécharger ce fichier</a>
         - Allez dans `Outils > Insert Symbol Options...`
-        <figure style="width: 400px;">
-         <img src="./images/illu_symbol_options.png" alt="Média en cours de création..."/>
-        </figure>
+
+          <figure style="width: 400px;">
+           <img src="./images/illu_symbol_options.png" alt="Média en cours de création..."/>
+          </figure>
+
         - Cliquez sur `Import` et sélectionnez le fichier téléchargé puis `Ok`.
     - Il suffit maintenant d'écrire les commandes directement dans le corps de votre texte pour qu'elles s'insèrent.
     - Les commandes sont visualisables sur [ce tableau](#les-abréviations-et-symboles).
@@ -354,9 +364,11 @@ Vous pouvez soumettre des modifications pour de multiples raisons, même pour de
 - Allez dans <span class="tab-button active">Parcourir</span> (<kbd class="kbd-keyboard">B</kbd>), cherchez les cartes d'intérêt avec <code>tag:</code>, sélectionnez-les avec <kbd>Ctrl</kbd>+<kbd>A</kbd> | <kbd>Cmd</kbd>+<kbd>A</kbd> et exportez-les avec <kbd>Ctrl</kbd>+<kbd>Maj</kbd>+<kbd>E</kbd> | <kbd>Cmd</kbd>+<kbd>Maj</kbd>+<kbd>E</kbd> ou via le menu `Exporter les notes...`.
 - De la même manière, vous pouvez exporter les cartes des items en rapport avec l'item d'intérêt.
     - Exportez selon ces réglages.
-    <figure style="width: 350px;">
-    <img src="./images/illu_export_notes.png" alt="Média en cours de création..."/>
-    </figure>
+
+      <figure style="width: 350px;">
+      <img src="./images/illu_export_notes.png" alt="Média en cours de création..."/>
+      </figure>
+
 - Isolez dans un PDF l'item d'intérêt (des collèges sont disponibles sur le Discord).
 - <a href="./assets/Liste_de_Tags_Anki_EDN.txt" download>Ajoutez ce fichier</a>
 - Avec ces trois ou quatres pièces jointes, envoyez ce prompt à l'IA :
@@ -383,9 +395,10 @@ Format attendu :
 </span>
 
 - Faites les modifications à l'aide des entrées HTML des cartes `<>` (<kbd>Cmd</kbd>+<kbd>Tab</kbd>+<kbd>X</kbd> | <kbd>Ctrl</kbd>+<kbd>Tab</kbd>+<kbd>X</kbd>)
-<figure style="width: 350px;">
-    <img src="./images/illu_htlm_modifier.png" alt="Média en cours de création..."/>
-</figure>
+
+  <figure style="width: 350px;">
+      <img src="./images/illu_htlm_modifier.png" alt="Média en cours de création..."/>
+  </figure>
 
 - Toutes les cartes validées doivent actualiser le tag source (par exemple : `source::2026::ORL`).
 
@@ -414,9 +427,11 @@ Vous pouvez cliquer pour éditer la carte aperçu.
 
 ##### S'il s'agit d'un groupe de cartes <span class="gif-wrapper" data-video="videos/ankicollab-soumettre-groupe.mp4" data-video-fallback="videos/ankicollab-soumettre-groupe.mp4"></span>
 - Dans l'explorateur (<span class="tab-button active">Parcourir</span>), sélectionnez les notes concernées, faites un clic droit puis sélectionnez **AnkiCollab: Bulk suggest notes** :
-<figure style="width: 450px;">
-    <img src="./images/illu_suggestion_multiple.png" alt="AnkiCollab: Bulk suggest notes"/>
-</figure>
+
+  <figure style="width: 450px;">
+      <img src="./images/illu_suggestion_multiple.png" alt="AnkiCollab: Bulk suggest notes"/>
+  </figure>
+
 - Renseignez un message explicatif détaillant les items ou notions concernées.
 
 #### Proposer des modifications
@@ -431,9 +446,11 @@ Vous pouvez cliquer pour éditer la carte aperçu.
 #### Supprimer des cartes <span class="gif-wrapper" data-video="videos/ankicollab-supprimer.mp4" data-video-fallback="videos/ankicollab-supprimer.mp4"></span>
 On peut proposer la suppression de cartes si elles sont devenues obsolètes, hors programme ou en doublon.
 - Dans l'explorateur (<span class="tab-button active">Parcourir</span>), sélectionnez les notes concernées, faites un clic droit puis choisissez **AnkiCollab: Request note removal** :
-<figure style="width: 450px;">
-    <img src="./images/illu_supprimer.png" alt="AnkiCollab: Request note removal"/>
-</figure>
+
+  <figure style="width: 450px;">
+      <img src="./images/illu_supprimer.png" alt="AnkiCollab: Request note removal"/>
+  </figure>
+
 - Précisez le motif précis de la demande de retrait.
 
 ---

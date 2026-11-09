@@ -3,3 +3,6 @@ serve
 build_test
 *.bak
 .vscode/
+.agents/
+tools/
+TEST_READY.md

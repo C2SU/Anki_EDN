@@ -117,6 +117,8 @@ Pour les versions antérieures ou des fonctionnalités étendues, les greffons s
   - [Addon pour configurer la manette](https://ankiweb.net/shared/info/1898790263) <span class="copy-block" onclick="copyText(this)">    <code>1898790263</code>    <span class="copy-feedback">Copié</span></span>
   - [Joytokey](https://joytokey.net/fr/) pour encore plus de personnalisation sur Windows
 ### IA basées sur les référentiels
+- [OpenEvidence](https://www.openevidence.com) : moteur d'IA clinique gratuit pour les soignants et étudiants en médecine. Réponses médicales synthétiques, rigoureusement sourcées avec liens directs vers la littérature internationale de référence (NEJM, JAMA, The Lancet, BMJ).
+- [PulseLife](https://www.pulselife.com/fr) : application clinique médicale (ex-360 medics) centralisant les recommandations de pratique clinique (HAS, sociétés savantes), la base médicamenteuse officielle (RCP, posologies, alertes ANSM/EMA), un calculateur de scores cliniques et un assistant IA médical (« PulseLife AI ») entraîné sur les sources institutionnelles.
 - [EDN GTP](https://chatgpt.com/g/g-nw9p7oAPP-edn-gpt)
 - [EDN AI](https://chatgpt.com/g/g-XMpoZ4ivr-edn-ai)
 - [DP EDN](https://chatgpt.com/g/g-sxGvTtmZ0-dossiers-progressifs-pour-l-edn)
@@ -134,22 +136,46 @@ Pour les versions antérieures ou des fonctionnalités étendues, les greffons s
     - Calendrier de révision avec méthode des J.
     - Graphique de progression.
 
-- Collèges et fiches officielles
-  - [Guide EFR / gaz du sang](https://www.google.com/search?q=Coll%C3%A8ge+des+enseignants+de+pneumologie+EFR+gaz+du+sang)
+- Préparation ciblée aux ECOS
+  - [DocECOS](https://docecos.fr) : plateforme structurée selon les situations de départ (SDD), avec trames d'interrogatoire, grilles d'évaluation par station et débriefings vidéo.
+  - [Banque Documentaire ECOS Entraide EDNi](https://shorturl.at/Atj5A) : recueil collaboratif de fiches de révision, trames d'anamnèse et grilles d'évaluation partagées entre étudiants.
+  - Podcasts dédiés aux ECOS :
+    - *Ecosphere* : entraînement audio aux stations de gériatrie et de prise en charge de la perte d'autonomie.
+    - *ECOS ORL et CCF* : cas cliniques oraux et stations types en oto-rhino-laryngologie et chirurgie cervico-faciale.
+
+- Collèges, polycopiés et référentiels transversaux
+  - [Radiologie CERF — « Les images à connaître pour l'EDN »](https://cerf.radiologie.fr/sites/cerf.radiologie.fr/files/medias/Images%20%C3%A0%20conna%C3%AEtre%20pour%20EDN_2.pdf) : guide pratique d'iconographie et de prescription du Collège des Enseignants de Radiologie de France.
+  - [Guide EFR / gaz du sang du CEP](https://cep.splf.fr/) : guide d'interprétation méthodique des EFR et gazométries pour l'EDN (Collège des Enseignants de Pneumologie).
   - [Les 172 questions tombables Pneumo](https://cep.splf.fr/wp-content/uploads/2023/07/172-QUESTIONS-DE-PNEUMOLOGIE-TOMBABLES-A-L-EDN.pdf)
-  - [Sémio Pneumo](https://semiologiepneumologique.com/)
-  - [Radiologie — « Les images à connaître pour l'EDN »](https://cerf.radiologie.fr/sites/cerf.radiologie.fr/files/medias/Images%20%C3%A0%20conna%C3%AEtre%20pour%20EDN_2.pdf) 
+  - Polycopié de Microbiologie du LISA : support de synthèse en bactériologie clinique, virologie et lecture raisonnée des antibiogrammes.
+  - Polycopié de Sémiologie Cardiologique : rappels anatomocliniques, sémiologie d'auscultation et bases des tracés ECG.
+  - Précis d'anesthésie cardiaque (6e édition) : référence transversale pour la physiologie cardiovasculaire appliquée, l'hémodynamique et le remplissage.
   - [Collège de réanimation — vidéos](https://www.ce-mir.fr/cemir-learning)
-  - [HAS EDN](https://www.has-sante.fr/jcms/p_3076609/fr/edn) 
+  - [HAS EDN](https://www.has-sante.fr/jcms/p_3076609/fr/edn)
   - [Sémio Neuro](https://www.cen-neurologie.fr/premier-cycle/semiologie-analytique/syndrome-myogene-myopathique)
-  - [CNET](https://therap.fr/dossiers_progressifs/)
-  - [UNESS cardio (ECG+++)](https://cardiologie.uness.fr/portail/index.php?title=Sp%C3%A9cial:Connexion&returnto=Sp%C3%A9cial%3AListe+des+Quiz&returntoquery=emdl_id%3D523)
+  - [CNET / CNEAT](https://therap.fr/dossiers_progressifs/)
+
+- Plateformes spécialisées et sémiologie visuelle
+  - [Dermato‑ist](https://dermato-ist.fr) : atlas iconographique de référence pour la dermatologie générale, les lésions élémentaires et les infections sexuellement transmissibles.
+  - [Pneumologique](https://semiologiepneumologique.com/) : fiches didactiques de sémiologie respiratoire et mécanismes physiopathologiques.
+  - [DicoSemiopsy](https://dicosemiopsy.fr) : dictionnaire interactif des termes et définitions de la sémiologie psychiatrique.
+  - [UNESS cardio (ECG+++)](https://cardiologie.uness.fr/portail/index.php?title=Sp%C3%A9cial:Connexion&returnto=Sp%C3%A9cial%3AListe+des+Quiz&returntoquery=emdl_id%3D523) : modules d'entraînement aux tracés électrocardiographiques et quiz interactifs.
+  - [ConfCardio](https://confcardio.com) : cours et vidéos d'apprentissage méthodique de l'ECG et de rythmologie par le Dr David Bialobroda.
+  - [Deranged Physiology](https://derangedphysiology.com) : ressource internationale de référence sur la physiopathologie avancée, la réanimation médicale et la ventilation mécanique.
+  - [Pinky Bone](https://www.pinkybone.com/) : ressources visuelles de sémiologie et traumatologie de l'appareil locomoteur.
+  - [Radiopaedia — cas cliniques](https://radiopaedia.org/search?lang=us&scope=mcqs)
+
+- Outils d'aide à la décision clinique
+  - [Antibioclic](https://antibioclic.com) : outil d'aide à la décision thérapeutique en antibiothérapie guidée par les recommandations de bonne pratique.
+  - [MDCalc](https://www.mdcalc.com) : calculatrice médicale de référence pour les scores cliniques validés, équations et arbres décisionnels.
+  - [Radiopep's](https://radiopeps.com) : guide d'aide à la justification et prescription de l'imagerie médicale selon les guides de la SFR/HAS.
+  - [IMAIOS e-Anatomy](https://www.imaios.com/fr/e-anatomy) : atlas anatomique interactif d'imagerie médicale (coupes scanner, IRM et radiographies).
+  - [LITFL ECG Library & Quiz](https://litfl.com/ecg-library/) : bibliothèque clinique internationale de tracés ECG annotés et cas cliniques d'urgence.
 
 - Chaînes YouTube & vidéos utiles
   - [Damien Legallois — cardiologie](https://www.youtube.com/results?search_query=Damien+Legallois)
   - [Dr Synapse — physiopathologie](https://www.youtube.com/results?search_query=Dr+Synapse)
   - [Docn'roll — néphrologie](https://www.youtube.com/results?search_query=Docn%27roll+nephrologie)
-  - [Dermato‑ist](https://www.youtube.com/results?search_query=Dermato-ist)
   - [Linexplain — rappels thérapeutiques](https://www.youtube.com/results?search_query=Linexplain)
   - [Docteur Par Coeur — Bactéries / Antibio](https://www.youtube.com/watch?v=LJ1jJbRaTcg&list=PLz3OcroAK7ew7wc5670lHEN3W-aSXVUg-)
   - [Docteur astuce — mémotechniques](https://www.youtube.com/@DrAstuce/playlists)
@@ -158,18 +184,19 @@ Pour les versions antérieures ou des fonctionnalités étendues, les greffons s
     - [Vidéo 2 — Coagulation](https://www.youtube.com/watch?v=SGzp9wqeu84)
   - [ECG Lyon](https://www.ecg-lyon.com/)
 
-
-- Images cliniques et entraînement
-  - [Radiopaedia — cas cliniques](https://radiopaedia.org/search?lang=us&scope=mcqs)
-  - [Pinky Bone — ressources orthopédie / semio](https://www.pinkybone.com/)
-
-- LCA / Conférences
-  - [LCA One — QCM et cours (payant)](https://www.google.com/search?q=LCA+One)
-  - [LCA Professeur GEEK](https://www.youtube.com/c/PrGeek)
+- Entraînement à la LCA et épreuves écrites
+  - [CNEAT — Entraînement LCA](https://therap.fr/lca/) : sujets officiels d'entraînement à la Lecture Critique d'Article publiés par le Collège National des Enseignants d'Anatomie et Thérapeutique.
+  - [Pr Geek (LCA)](https://www.youtube.com/c/PrGeek) : méthodologie pas-à-pas des articles scientifiques et décryptage des pièges statistiques aux épreuves de LCA.
+  - [Épistémologie du raisonnement statistique — Pr Bruno Falissard](https://www.youtube.com/results?search_query=Bruno+Falissard+%C3%A9pist%C3%A9mologie+du+raisonnement+statistique) : conférence de référence sur la démarche probabiliste, la causalité et les biais méthodologiques en recherche biomédicale.
   - [TACFA — Conférences](https://tacfa.odoo.com/conf)
+  - [LCA One — QCM et cours (payant)](https://www.google.com/search?q=LCA+One)
 
-- Podcasts 
-  - Nephrodio 
+- Podcasts médicaux (révision nomade)
+  - [Nephrodio](https://www.youtube.com/results?search_query=nephrodio) : podcast de référence en néphrologie, équilibre hydro-électrolytique et néphropathies glomérulaires.
+  - *L'Externe* : synthèses audio de cours de DFASM enregistrées par un interne.
+  - *Ligne de MIR* : retours d'expérience, physiopathologie et réflexions autour des urgences de réanimation médicale.
+  - *The Curious Clinicians* : podcast d'investigation physiopathologique et clinique sur les mécanismes sous-jacents aux pathologies courantes.
+  - *Didier Fassin (Collège de France)* : cycle de cours de sciences sociales, éthique médicale et santé publique. 
 
 ### Réviser avec une manette
 

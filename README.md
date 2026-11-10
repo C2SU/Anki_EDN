@@ -84,29 +84,18 @@ Tu colle simplement ton dosser Anki EDN dans le tools.
 2. **La documentation** (ce repo) utilise **mdBook** + GitHub Pages
 3. **La communauté** se coordonne principalement sur **Discord**
 
-### Tâches en attente (voir `src/to_do.md`)
-
-- [ ] Tuto pour les maintainers / former aux normes
-- [ ] Communication avec les internes
-- [ ] Add-on pour automatiser l'installation
-- [ ] Items C et internes
-- [ ] Améliorer le tuto rédaction
-- [ ] Surveiller les MAJ des add-ons utilisés
-
 ### Contacts clés
 
 - **Léo Picat** : Créateur original du deck ([picat.fr](https://picat.fr))
 - **AnkiCollab** : Plugin de synchronisation ([GitHub](https://github.com/CravingCrates/AnkiCollab-Plugin))
-- **Pôle Info C2SU** : Alexandre, Ragy, Adib, Théo, Rostan
+- **Angelo** : Créateur du projet ([Discord](https://discord.gg/2A7zHAEBYt)
 
 ### Fichiers importants à maintenir
 
 | Fichier | Rôle |
 |---------|------|
-| `src/symboles.md` | Liste des abréviations (CRUCIAL pour les utilisateurs) |
-| `src/regles_du_deck.md` | Normes de rédaction des cartes |
+| `src/symboles.md` | Liste des abréviations |
 | `src/mises_a_jour.md` | Changelog des items |
-| `book.toml` | Config mdBook (auteur, titre, thème) |
 
 ---
 
@@ -116,5 +105,5 @@ Ce projet est sous licence — voir le fichier [LICENSE](LICENSE).
 
 ---
 
-*Dernière mise à jour : Janvier 2026*  
+*Dernière mise à jour : Novembre 2026*  
 *Créé par Angelo Marciszewer (Ficello)*

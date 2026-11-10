@@ -11,7 +11,6 @@
 |-----------|------|
 | 📖 **Site de documentation** | [c2su.github.io/Anki_EDN](https://c2su.github.io/Anki_EDN/) |
 | 💬 **Discord communautaire** | [discord.gg/2A7zHAEBYt](https://discord.gg/2A7zHAEBYt) |
-| 📧 **Contact technique** | informatique@c2su.org |
 
 ---
 

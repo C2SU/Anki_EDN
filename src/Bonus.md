@@ -1,14 +1,30 @@
 # Bonus
 ## Voici les outils que notre équipe vous recommande
 ### Add‑ons Anki 
-Pour savoir comment installer un add-on, référez-vous au [tuto d'installation](./installation.md).
+Pour savoir comment installer un add-on, référez-vous au [tuto d'installation](./Anki_EDN.md#première-installation--anki-ankicollab-téléchargement-du-deck-et-add-ons).
 
 <h4>
-  EDN Stat (inclus dans Anki EDN)
+  <a href="https://ankiweb.net/shared/info/1674438508">EDN Stat</a> (inclus dans Anki EDN)
+  <span class="copy-block" onclick="copyText(this)"><code>1674438508</code><span class="copy-feedback">Copié</span></span>
 </h4>
 
-- Permet d'afficher votre progression sur le deck Anki EDN (pourcentage d'items vus par rangs, matières, fiches LiSA).
 - Accessible dans le menu `Anki EDN > EDN Stat` ou avec le raccourci <kbd>Ctrl</kbd>+<kbd>U</kbd>.
+- **Vue Globale** : progression détaillée par **Items**, **Matières** et **Situations de départ (SDD)**, avec filtres par rangs (`Rang A`, `Rang B`, `Rang C`).
+- **Historique & Prévisions** : fiabilité de rétention par spécialité, volume d'étude et dette de révision (*Backlog*), et **simulation prédictive FSRS**.
+
+<h4>
+  <a href="https://ankiweb.net/shared/info/132168060">Diff Hunk — Anki Import Diff Review</a>
+  <span class="copy-block" onclick="copyText(this)"><code>132168060</code><span class="copy-feedback">Copié</span></span>
+</h4>
+
+- Passerelle d'inspection non destructive pour les mises à jour AnkiCollab et les imports.
+- Validation ou rejet bloc par bloc (<kbd>Tab</kbd>, <kbd>Y</kbd>/<kbd>N</kbd>, <kbd>F2</kbd> tout accepter, <kbd>F3</kbd> tout rejeter, <kbd>F4</kbd> tags seuls), édition manuelle et panneaux latéraux dans l'explorateur (<kbd>Alt</kbd>+<kbd>H</kbd>, <kbd>Alt</kbd>+<kbd>C</kbd>).
+
+
+<h4>
+  <a href="https://ankiweb.net/shared/info/1177622942">Image Editor Enhanced</a>
+  <span class="copy-block" onclick="copyText(this)"><code>1177622942</code><span class="copy-feedback">Copié</span></span>
+</h4>
 
 <h4>
   Pour les externes compétitifs : <a href="https://ankiweb.net/shared/info/175794613">Anki leaderboard</a> 
@@ -79,9 +95,9 @@ Pour savoir comment installer un add-on, référez-vous au [tuto d'installation]
 
 - Affiche les statistiques de la carte en temps réel pendant les révisions.
 
-#### [Customize Keyboard Shortcuts](https://ankiweb.net/shared/info/24411424) <span class="copy-block" onclick="copyText(this)">    <code>24411424</code>    <span class="copy-feedback">Copié</span></span>
+#### [Customize Keyboard Shortcuts Enhanced](https://ankiweb.net/shared/info/353547840) <span class="copy-block" onclick="copyText(this)">    <code>353547840</code>    <span class="copy-feedback">Copié</span></span>
 
-- Pour modifier tous les raccourcis clavier d'Anki.
+- Clavier virtuel interactif centralisant tous les raccourcis d'Anki et des add-ons, avec détection des conflits.
 
 #### [See Previous Card Ratings](https://ankiweb.net/shared/info/1906641654) <span class="copy-block" onclick="copyText(this)">    <code>1906641654</code>    <span class="copy-feedback">Copié</span></span>
 
@@ -95,35 +111,31 @@ Pour savoir comment installer un add-on, référez-vous au [tuto d'installation]
 
 - Simplifie l'interface de révision en ne gardant que deux boutons (Échec / Réussite), ce qui permet de réviser plus rapidement tout en restant parfaitement compatible avec l'algorithme FSRS.
 
-#### [Audiovisual Feedback](https://ankiweb.net/shared/info/231569866) <span class="copy-block" onclick="copyText(this)">    <code>231569866</code>    <span class="copy-feedback">Copié</span></span>
+#### Avance automatique native, Speed Focus et détection de fatigue <span class="gif-wrapper" data-video="videos/bonus-auto-reveal.mp4" data-video-fallback="videos/bonus-auto-reveal.mp4"></span>
 
-- Ajoute des retours visuels et sonores lors des réponses pour dynamiser vos sessions de révision.
+La fonction **Avance automatique** est directement intégrée dans les options du paquet (`Options du paquet > Avance automatique`) sans nécessiter d'add-on tiers.
 
-#### Avance automatique native et maintien du rythme <span class="gif-wrapper" data-video="videos/bonus-auto-reveal.mp4" data-video-fallback="videos/bonus-auto-reveal.mp4"></span>
-
-Dans les versions récentes d'Anki (Anki 24+ et Anki 25/26), la fonction **Avance automatique** est directement intégrée dans les options du paquet (`Options du paquet > Avance automatique`) sans nécessiter d'add-on tiers :
-- Réglez les secondes avant d'afficher la réponse automatiquement (ex. 10 secondes) ;
-- Choisissez l'action suivante (attendre votre réponse ou passer automatiquement).
-
-Pour les versions antérieures ou des fonctionnalités étendues, les greffons suivants restent disponibles :
-- **[Auto Reveal](https://ankiweb.net/shared/info/1010827105)** <span class="copy-block" onclick="copyText(this)"><code>1010827105</code><span class="copy-feedback">Copié</span></span> : permet de révéler automatiquement le verso après un délai configurable.
-- **[Speed Focus Mode](https://ankiweb.net/shared/info/1046608507)** <span class="copy-block" onclick="copyText(this)"><code>1046608507</code><span class="copy-feedback">Copié</span></span> : émet une alerte sonore ou dévoile la carte si vous prenez trop de temps.
-- **Alerte Fatigue EDN** (inclus dans Anki EDN) : vous prévient au bout d'un nombre défini de cartes ou de minutes consécutives pour éviter la surcharge cognitive.
+- **[Alerte Fatigue & Speed Focus](https://ankiweb.net/shared/info/1071808091)** <span class="copy-block" onclick="copyText(this)"><code>1071808091</code><span class="copy-feedback">Copié</span></span> : analyse en temps réel votre vitesse de réponse et votre taux d'erreur par rapport à votre profil historique des 30 derniers jours, propose un auto-calibrage et intègre un mode **auto avance**.
 
 ### WorkFlow
 #### Nos techniques pour gagner du temps sur le deck
 - Optimiser régulièrement le FSRS
 - Enfouir les cartes plutôt que de les réapprendre entièrement (on les verra le lendemain)
   - Quand on se spoil 
-  - Quand on les confond
+  - Quand on les confonds
   - Quand on oublie un détail pas vraiment important
 - Réviser avec une manette connectée à son ordinateur
-  - N'importe quelle manette de console fonctionnera. Le modèle micro de 8BitDo est compact et sans fil.
-  - [Addon pour configurer la manette](https://ankiweb.net/shared/info/1898790263) <span class="copy-block" onclick="copyText(this)">    <code>1898790263</code>    <span class="copy-feedback">Copié</span></span>
-  - [Joytokey](https://joytokey.net/fr/) pour encore plus de personnalisation sur Windows
+  - N'importe quelle manette de console fonctionnera. Le modèle [8BitDo Micro](https://www.8bitdo.com/micro/) est compact et sans fil.
+  - [Addon Contanki / Gamepad pour configurer la manette](https://ankiweb.net/shared/info/1898790263) <span class="copy-block" onclick="copyText(this)">    <code>1898790263</code>    <span class="copy-feedback">Copié</span></span>
+  - [JoyToKey](https://joytokey.net/fr/) sur Windows ou [Enjoy2](https://github.com/fyhuang/enjoy2/blob/master/README.md) sur macOS pour mapper les touches.
+#### Masquer les informations de progression pour mieux se concentrer
+
+Dans `Préférences > Révision` (<kbd>Ctrl</kbd>+<kbd>P</kbd> / <kbd>Cmd</kbd>+<kbd>,</kbd>), vous pouvez décocher :
+- **« Afficher le nombre de cartes restantes »** — pour ne plus voir le compteur de cartes pendant les révisions
+- **« Afficher la date de la prochaine révision au dessus des boutons »** — pour ne pas être distrait par les intervalles futurs
 ### IA basées sur les référentiels
-- [OpenEvidence](https://www.openevidence.com) : moteur d'IA clinique gratuit pour les soignants et étudiants en médecine. Réponses médicales synthétiques, rigoureusement sourcées avec liens directs vers la littérature internationale de référence (NEJM, JAMA, The Lancet, BMJ).
-- [PulseLife](https://www.pulselife.com/fr) : application clinique médicale (ex-360 medics) centralisant les recommandations de pratique clinique (HAS, sociétés savantes), la base médicamenteuse officielle (RCP, posologies, alertes ANSM/EMA), un calculateur de scores cliniques et un assistant IA médical (« PulseLife AI ») entraîné sur les sources institutionnelles.
+- [OpenEvidence](https://www.openevidence.com) : moteur d'IA clinique gratuit pour les soignants et étudiants en médecine avec liens directs vers la littérature internationale de référence (NEJM, JAMA, The Lancet, BMJ).
+- [PulseLife](https://www.pulselife.com/fr).
 - [EDN GTP](https://chatgpt.com/g/g-nw9p7oAPP-edn-gpt)
 - [EDN AI](https://chatgpt.com/g/g-XMpoZ4ivr-edn-ai)
 - [DP EDN](https://chatgpt.com/g/g-sxGvTtmZ0-dossiers-progressifs-pour-l-edn)
@@ -142,14 +154,14 @@ Pour les versions antérieures ou des fonctionnalités étendues, les greffons s
     - Graphique de progression.
 
 - Préparation ciblée aux ECOS
-  - [DocECOS](https://docecos.fr) : plateforme structurée selon les situations de départ (SDD), avec trames d'interrogatoire, grilles d'évaluation par station et débriefings vidéo.
+  - [DocECOS](https://docecos.fr)
   - [Banque Documentaire ECOS Entraide EDNi](https://shorturl.at/Atj5A) : recueil collaboratif de fiches de révision, trames d'anamnèse et grilles d'évaluation partagées entre étudiants.
   - Podcasts dédiés aux ECOS :
-    - *Ecosphere* : entraînement audio aux stations de gériatrie et de prise en charge de la perte d'autonomie.
-    - *ECOS ORL et CCF* : cas cliniques oraux et stations types en oto-rhino-laryngologie et chirurgie cervico-faciale.
+    - *Ecosphere*
+    - *ECOS ORL et CCF*
 
 - Collèges, polycopiés et référentiels transversaux
-  - [Radiologie CERF — « Les images à connaître pour l'EDN »](https://cerf.radiologie.fr/sites/cerf.radiologie.fr/files/medias/Images%20%C3%A0%20conna%C3%AEtre%20pour%20EDN_2.pdf) : guide pratique d'iconographie et de prescription du Collège des Enseignants de Radiologie de France.
+  - [Radiologie CERF — « Les images à connaître pour l'EDN »](https://cerf.radiologie.fr/sites/cerf.radiologie.fr/files/medias/Images%20%C3%A0%20conna%C3%AEtre%20pour%20EDN_2.pdf)
   - [Guide EFR / gaz du sang du CEP](https://cep.splf.fr/) : guide d'interprétation méthodique des EFR et gazométries pour l'EDN (Collège des Enseignants de Pneumologie).
   - [Les 172 questions tombables Pneumo](https://cep.splf.fr/wp-content/uploads/2023/07/172-QUESTIONS-DE-PNEUMOLOGIE-TOMBABLES-A-L-EDN.pdf)
   - Polycopié de Microbiologie du LISA : support de synthèse en bactériologie clinique, virologie et lecture raisonnée des antibiogrammes.
@@ -161,7 +173,7 @@ Pour les versions antérieures ou des fonctionnalités étendues, les greffons s
   - [CNET / CNEAT](https://therap.fr/dossiers_progressifs/)
 
 - Plateformes spécialisées et sémiologie visuelle
-  - [Dermato‑ist](https://dermato-ist.fr) : atlas iconographique de référence pour la dermatologie générale, les lésions élémentaires et les infections sexuellement transmissibles.
+  - [Dermato‑ist](https://dermato-ist.fr)
   - [Pneumologique](https://semiologiepneumologique.com/) : fiches didactiques de sémiologie respiratoire et mécanismes physiopathologiques.
   - [DicoSemiopsy](https://dicosemiopsy.fr) : dictionnaire interactif des termes et définitions de la sémiologie psychiatrique.
   - [UNESS cardio (ECG+++)](https://cardiologie.uness.fr/portail/index.php?title=Sp%C3%A9cial:Connexion&returnto=Sp%C3%A9cial%3AListe+des+Quiz&returntoquery=emdl_id%3D523) : modules d'entraînement aux tracés électrocardiographiques et quiz interactifs.
@@ -203,17 +215,3 @@ Pour les versions antérieures ou des fonctionnalités étendues, les greffons s
   - *The Curious Clinicians* : podcast d'investigation physiopathologique et clinique sur les mécanismes sous-jacents aux pathologies courantes.
   - *Didier Fassin (Collège de France)* : cycle de cours de sciences sociales, éthique médicale et santé publique. 
 
-### Réviser avec une manette
-
-- J'utilise [ça](https://www.8bitdo.com/micro/), mais tout ferra l'affaire (compact, c'est cool).
-
-Pour mapper les touches de la manette aux actions Anki :
-- **Sur Windows** : utilisez [JoyToKey](https://joytokey.net/en/download)
-- **Sur Mac** : utilisez [Enjoy2](https://github.com/fyhuang/enjoy2/blob/master/README.md)
-- **Alternative multi-plateforme** : l'add-on Anki [Gamepad](https://ankiweb.net/shared/info/1898790263)
-*
-### Masquer les informations de progression pour mieux se concentrer
-
-Dans `Préférences > Révision` (<kbd>Ctrl</kbd>+<kbd>P</kbd> / <kbd>Cmd</kbd>+<kbd>,</kbd>), vous pouvez décocher :
-- **« Afficher le nombre de cartes restantes »** — pour ne plus voir le compteur de cartes pendant les révisions
-- **« Afficher la date de la prochaine révision au dessus des boutons »** — pour ne pas être distrait par les intervalles futurs

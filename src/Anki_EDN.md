@@ -40,7 +40,7 @@ Il faut compter **10 minutes** de lecture avant de pouvoir utiliser les cartes A
 Pour travailler sur tablette ou téléphone, utilisez les applications **AnkiDroid** / **AnkiMobile** ou **AnkiWeb**. 
 > Le support le plus complet reste Anki sur ordinateur, peu importe le système d'exploitation.
 
-Ce paquet se distingue par la brièveté des cartes et par un système de mise en contexte des cartes. Tout cela rend favorable la rétention des informations à très long terme. Rejoignez [Notre Discord](https://discord.gg/2A7zHAEBYt) pour recevoir de l'aide et contribuer au projet.
+Ce paquet se distingue par la brièveté des cartes et par un système de mise en contexte des cartes. Tout cela rend favorable la rétention des informations à très long terme. Rejoignez [Notre Discord](https://discord.gg/2A7zHAEBYt) pour recevoir de l'aide et contribuer au projet, ou consultez les [témoignages d'étudiants](./temoignages.md) ayant préparé les EDN avec ce deck.
 
 ### "Je n'ai jamais utilisé Anki"
 - Jetez un coup d'œil à [ce document](https://drive.google.com/file/d/1UWSg3gj3PyIJq0oXetesZVlbJuRGxLrA/view?usp=drive_link).
